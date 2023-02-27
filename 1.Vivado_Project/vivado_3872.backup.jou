@@ -1,0 +1,198 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Feb 25 13:15:07 2023
+# Process ID: 3872
+# Current directory: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6956 D:\sine\Desktop\IC\Preliminary\Cortex_M3_SoC\Vivado_Project\cm3_Soc.xpr
+# Log file: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/vivado.log
+# Journal file: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.xpr
+update_compile_order -fileset sources_1
+open_run impl_3
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+open_bd_design {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd}
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/impl_3/cm3_core_wrapper.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/impl_3/cm3_core_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+open_bd_design {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd}
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/impl_3/cm3_core_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+create_run synth_9 -flow {Vivado Synthesis 2018} -strategy {Vivado Synthesis Defaults} -report_strategy {Vivado Synthesis Default Reports}
+current_run [get_runs synth_9]
+set_property strategy Flow_AreaOptimized_high [get_runs synth_9]
+set_property strategy Performance_Explore [get_runs impl_3]
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+set_property strategy Performance_Explore [get_runs impl_2]
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+create_run synth_10 -flow {Vivado Synthesis 2018} -strategy Flow_AreaOptimized_high -report_strategy {Vivado Synthesis Default Reports}
+current_run [get_runs synth_10]
+set_property strategy Flow_PerfOptimized_high [get_runs synth_10]
+launch_runs impl_4 -jobs 8
+wait_on_run impl_4
+reset_run synth_10
+launch_runs synth_10 -jobs 8
+wait_on_run synth_10
+launch_runs impl_4 -jobs 8
+wait_on_run impl_4
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_3
+reset_run impl_3
+close_design
+launch_runs impl_3 -jobs 8
+wait_on_run impl_3
+reset_run synth_8
+launch_runs synth_8 -jobs 8
+wait_on_run synth_8
+open_bd_design {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd}
+open_run impl_4
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+create_run impl_5 -parent_run synth_10 -flow {Vivado Implementation 2018} -strategy {Vivado Implementation Defaults} -report_strategy {Vivado Implementation Default Reports}
+current_run [get_runs impl_5]
+set_property strategy Performance_ExplorePostRoutePhysOpt [get_runs impl_5]
+launch_runs impl_5 -jobs 8
+wait_on_run impl_5
+open_bd_design {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd}
+launch_runs impl_5 -to_step write_bitstream -jobs 8
+wait_on_run impl_5
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+reset_run impl_5 -prev_step 
+launch_runs impl_5 -to_step write_bitstream -jobs 8
+wait_on_run impl_5
+open_bd_design {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd}
+startgroup
+set_property -dict [list CONFIG.C_IS_DUAL {0} CONFIG.C_ALL_OUTPUTS {0}] [get_bd_cells axi_gpio_0]
+delete_bd_objs [get_bd_intf_nets axi_gpio_0_GPIO2]
+endgroup
+delete_bd_objs [get_bd_intf_ports GPIOB]
+set_property location {1560 163} [get_bd_intf_ports GPIOA]
+startgroup
+set_property -dict [list CONFIG.C_ALL_INPUTS {0} CONFIG.C_ALL_OUTPUTS {0}] [get_bd_cells axi_gpio_0]
+endgroup
+reset_target all [get_files  D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd]
+export_ip_user_files -of_objects  [get_files  D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd] -sync -no_script -force -quiet
+save_bd_design
+generate_target all [get_files  D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd]
+export_ip_user_files -of_objects [get_files D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd] -directory D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.ip_user_files/sim_scripts -ip_user_files_dir D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.ip_user_files -ipstatic_source_dir D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.cache/compile_simlib/modelsim} {questa=D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.cache/compile_simlib/questa} {riviera=D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.cache/compile_simlib/riviera} {activehdl=D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd] -top
+reset_run synth_10
+launch_runs synth_10 -jobs 8
+wait_on_run synth_10
+launch_runs impl_5 -jobs 8
+wait_on_run impl_5
+open_run synth_10 -name synth_10
+refresh_design
+current_design impl_4
+close_design
+reset_run synth_10
+launch_runs synth_10 -jobs 8
+wait_on_run synth_10
+close_design
+open_bd_design {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd}
+launch_runs impl_5 -jobs 8
+wait_on_run impl_5
+reset_run impl_5
+open_run synth_10 -name synth_10
+set_property IOSTANDARD LVCMOS33 [get_ports [list {GPIOA_tri_io[7]} {GPIOA_tri_io[6]} {GPIOA_tri_io[5]} {GPIOA_tri_io[4]} {GPIOA_tri_io[3]} {GPIOA_tri_io[2]} {GPIOA_tri_io[1]} {GPIOA_tri_io[0]}]]
+place_ports {GPIOA_tri_io[7]} T12
+place_ports {GPIOA_tri_io[6]} U12
+place_ports {GPIOA_tri_io[5]} V12
+place_ports {GPIOA_tri_io[4]} W13
+place_ports {GPIOA_tri_io[3]} T20
+place_ports {GPIOA_tri_io[2]} U20
+place_ports {GPIOA_tri_io[1]} V20
+place_ports {GPIOA_tri_io[0]} W20
+save_constraints
+launch_runs impl_5 -jobs 8
+wait_on_run impl_5
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+open_run impl_5
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+launch_runs impl_5 -to_step write_bitstream -jobs 8
+wait_on_run impl_5
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/impl_5/cm3_core_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+open_bd_design {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd}
+set_property offset 0x40010000 [get_bd_addr_segs {CORTEXM3_AXI_0/CM3_SYS_AXI3/SEG_axi_uartlite_0_Reg}]
+connect_bd_net [get_bd_pins CORTEXM3_AXI_0/SYSRESETREQ] [get_bd_pins proc_sys_reset_0/mb_debug_sys_rst]
+save_bd_design
+validate_bd_design
+reset_target all [get_files  D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd]
+export_ip_user_files -of_objects  [get_files  D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd] -sync -no_script -force -quiet
+generate_target all [get_files  D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd]
+export_ip_user_files -of_objects [get_files D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd] -directory D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.ip_user_files/sim_scripts -ip_user_files_dir D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.ip_user_files -ipstatic_source_dir D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.cache/compile_simlib/modelsim} {questa=D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.cache/compile_simlib/questa} {riviera=D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.cache/compile_simlib/riviera} {activehdl=D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd] -top
+reset_run synth_10
+launch_runs impl_5 -jobs 8
+wait_on_run impl_5
+launch_runs impl_5 -to_step write_bitstream -jobs 8
+wait_on_run impl_5
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/impl_5/cm3_core_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+open_bd_design {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd}
+delete_bd_objs [get_bd_nets CORTEXM3_AXI_0_SYSRESETREQ]
+save_bd_design
+reset_target all [get_files  D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd]
+export_ip_user_files -of_objects  [get_files  D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd] -sync -no_script -force -quiet
+generate_target all [get_files  D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd]
+export_ip_user_files -of_objects [get_files D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd] -directory D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.ip_user_files/sim_scripts -ip_user_files_dir D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.ip_user_files -ipstatic_source_dir D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.cache/compile_simlib/modelsim} {questa=D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.cache/compile_simlib/questa} {riviera=D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.cache/compile_simlib/riviera} {activehdl=D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd] -top
+reset_run synth_10
+launch_runs impl_5 -to_step write_bitstream -jobs 8
+wait_on_run impl_5
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/impl_5/cm3_core_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+current_design synth_10
+open_bd_design {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd}
+set_property range 32K [get_bd_addr_segs {CORTEXM3_AXI_0/CM3_SYS_AXI3/SEG_axi_gpio_0_Reg}]
+set_property range 64K [get_bd_addr_segs {CORTEXM3_AXI_0/CM3_SYS_AXI3/SEG_axi_gpio_0_Reg}]
+set_property range 8K [get_bd_addr_segs {CORTEXM3_AXI_0/CM3_SYS_AXI3/SEG_axi_gpio_0_Reg}]
+set_property range 8K [get_bd_addr_segs {CORTEXM3_AXI_0/CM3_SYS_AXI3/SEG_axi_uartlite_0_Reg}]
+set_property offset 0x40002000 [get_bd_addr_segs {CORTEXM3_AXI_0/CM3_SYS_AXI3/SEG_axi_uartlite_0_Reg}]
+open_bd_design {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd}
+reset_target all [get_files  D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd]
+export_ip_user_files -of_objects  [get_files  D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd] -sync -no_script -force -quiet
+generate_target all [get_files  D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd]
+export_ip_user_files -of_objects [get_files D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd] -directory D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.ip_user_files/sim_scripts -ip_user_files_dir D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.ip_user_files -ipstatic_source_dir D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.cache/compile_simlib/modelsim} {questa=D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.cache/compile_simlib/questa} {riviera=D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.cache/compile_simlib/riviera} {activehdl=D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd] -top
+reset_run synth_10
+launch_runs impl_5 -to_step write_bitstream -jobs 8
+wait_on_run impl_5
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/impl_5/cm3_core_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+open_bd_design {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd}
+startgroup
+set_property -dict [list CONFIG.C_S_AXI_ACLK_FREQ_HZ_d.VALUE_SRC USER] [get_bd_cells axi_uartlite_0]
+set_property -dict [list CONFIG.C_S_AXI_ACLK_FREQ_HZ {50000000} CONFIG.C_S_AXI_ACLK_FREQ_HZ_d {50}] [get_bd_cells axi_uartlite_0]
+endgroup
+save_bd_design

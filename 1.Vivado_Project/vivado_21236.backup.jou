@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Feb 23 16:59:40 2023
+# Process ID: 21236
+# Current directory: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12284 D:\sine\Desktop\IC\Preliminary\Cortex_M3_SoC\Project\cm3_Soc.xpr
+# Log file: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/vivado.log
+# Journal file: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.xpr
+open_bd_design {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd}
+update_compile_order -fileset sources_1

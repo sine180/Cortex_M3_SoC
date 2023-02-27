@@ -1,0 +1,505 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 13564
+License: Customer
+
+Current time: 	Fri Feb 24 07:53:54 CST 2023
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 1920x1080
+Screen resolution (DPI): 120
+Available screens: 1
+Available disk space: 56 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	D:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	sine
+User home directory: C:/Users/sine
+User working directory: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2018.3
+RDI_DATADIR: D:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: D:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/sine/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/sine/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/sine/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/vivado.log
+Vivado journal file location: 	D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/vivado.jou
+Engine tmp dir: 	D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/.Xil/Vivado-13564-LAPTOP-7PHG5772
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2018.3
+XILINX_SDK: D:/Xilinx/SDK/2018.3
+XILINX_VIVADO: D:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 643 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 94 MB (+96320kb) [00:00:07]
+// [Engine Memory]: 620 MB (+498792kb) [00:00:07]
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: D:\sine\Desktop\IC\Preliminary\Cortex_M3_SoC\Project\cm3_Soc.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 646 MB. GUI used memory: 47 MB. Current time: 2/24/23, 7:53:56 AM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 724 MB (+76200kb) [00:00:14]
+// [GUI Memory]: 106 MB (+6952kb) [00:00:15]
+// [Engine Memory]: 804 MB (+46040kb) [00:00:15]
+// WARNING: HEventQueue.dispatchEvent() is taking  2384 ms.
+// Tcl Message: open_project D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/CM3_IP/Arm_ipi_repository'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'. 
+// Project name: cm3_Soc; location: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project; part: xc7z010clg400-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 850.453 ; gain = 182.977 
+dismissDialog("Open Project"); // bx (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bx (cp):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd} 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: Adding cell -- Arm.com:CortexM:CORTEXM3_AXI:1.1 - CORTEXM3_AXI_0 Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0 Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0 Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  1282 ms.
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0 Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0 Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_2 Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1 Successfully read diagram <cm3_core> from BD file <D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd> 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// 'bA' command handler elapsed time: 3 seconds
+dismissDialog("Open Block Design"); // bx (cp)
+// [GUI Memory]: 118 MB (+7634kb) [00:00:23]
+// [Engine Memory]: 850 MB (+6286kb) [00:00:23]
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 850 MB. GUI used memory: 55 MB. Current time: 2/24/23, 7:54:11 AM CST
+// Elapsed time: 15 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // R (aF, cp)
+// Elapsed time: 65 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B (f, cp)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "GPI"); // OverlayTextField (ay, ResizableWindow)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "GPIO"); // OverlayTextField (ay, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI GPIO", 0, "AXI GPIO", 0, false); // O (Q, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI GPIO", 0, "AXI GPIO", 0, false); // O (Q, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI GPIO", 0); // O (Q, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI GPIO", 0, "AXI GPIO", 0, false, false, false, false, false, true); // O (Q, ResizableWindow) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// bx (cp):  Add IP : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: startgroup 
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // bx (cp)
+// Tcl Command: 'set_property location {2 -253 -310} [get_bd_cells axi_gpio_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {2 -253 -310} [get_bd_cells axi_gpio_0] 
+// Tcl Command: 'set_property location {5.5 1316 -38} [get_bd_cells axi_gpio_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {5.5 1316 -38} [get_bd_cells axi_gpio_0] 
+// Elapsed time: 13 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1252, 186, 1557, 762, false, false, false, true, false); // fS (k, cp) - Popup Trigger
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_PIN
+// r (cp): Customize Pin: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 892 MB. GUI used memory: 65 MB. Current time: 2/24/23, 7:55:56 AM CST
+// Elapsed time: 10 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+dismissDialog("Customize Pin"); // r (cp)
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins axi_gpio_0/S_AXI] -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M00_AXI] 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_PIN
+// r (cp): Customize Pin: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+dismissDialog("Customize Pin"); // r (cp)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cp): Re-customize IP: addNotify
+selectCheckBox((HResource) null, "All Outputs", true); // g (o, r): TRUE
+// Elapsed time: 13 seconds
+setText("GPIO Width", "8"); // z (bh, r)
+selectCheckBox((HResource) null, "Enable Dual Channel", true); // g (o, r): TRUE
+selectCheckBox((HResource) null, "Enable Dual Channel", true); // g (o, r): TRUE
+selectCheckBox((HResource) null, "Enable Dual Channel", false); // g (o, r): FALSE
+selectButton(PAResourceAtoD.CustomizeCoreDialog_DOCUMENTATION, "Documentation"); // B (f, r)
+selectMenuItem(PAResourceCommand.PACommandNames_SHOW_PRODUCT_GUIDE, "Product Guide"); // af (al, r)
+// Run Command: PAResourceCommand.PACommandNames_SHOW_PRODUCT_GUIDE
+// Elapsed time: 341 seconds
+selectCheckBox((HResource) null, "Enable Dual Channel", true); // g (o, r): TRUE
+selectCheckBox((HResource) null, "All Inputs", true); // g (o, r): TRUE
+setText("GPIO Width", "8"); // z (bh, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cp)
+// Tcl Command: 'set_property -dict [list CONFIG.C_GPIO_WIDTH {8} CONFIG.C_GPIO2_WIDTH {8} CONFIG.C_IS_DUAL {1} CONFIG.C_ALL_INPUTS_2 {1} CONFIG.C_ALL_OUTPUTS {1}] [get_bd_cells axi_gpio_0]'
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.C_GPIO_WIDTH {8} CONFIG.C_GPIO2_WIDTH {8} CONFIG.C_IS_DUAL {1} CONFIG.C_ALL_INPUTS_2 {1} CONFIG.C_ALL_OUTPUTS {1}] [get_bd_cells axi_gpio_0] 
+// Tcl Message: endgroup 
+// [GUI Memory]: 125 MB (+851kb) [00:08:53]
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports CLK] [get_bd_pins axi_gpio_0/s_axi_aclk] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins axi_gpio_0/s_axi_aresetn] 
+// Elapsed time: 28 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1357, 229, 1557, 762, false, false, false, true, false); // fS (k, cp) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ac (al, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_CREATE_INTERFACE_PORT, "Create Interface Port..."); // af (al, Popup.HeavyWeightWindow)
+// bx (cp):  Create Interface Port : addNotify
+// aL (cp): Create Interface Port: addNotify
+// Elapsed time: 14 seconds
+setText(PAResourceAtoD.CreateRSBInterfaceDialog_INTERFACE_NAME, "GPIOA"); // Y (Q, aL)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aL)
+dismissDialog("Create Interface Port"); // aL (cp)
+// Tcl Message: startgroup 
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 GPIOA 
+// TclEventType: RSB_CONNECTION_CHANGE
+// bx (cp):  Create Interface Port : addNotify
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins axi_gpio_0/GPIO] [get_bd_intf_ports GPIOA] 
+// Tcl Message: endgroup 
+dismissDialog("Create Interface Port"); // bx (cp)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1357, 242, 1557, 762, false, false, false, true, false); // fS (k, cp) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ac (al, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_CREATE_INTERFACE_PORT, "Create Interface Port..."); // af (al, Popup.HeavyWeightWindow)
+// aL (cp): Create Interface Port: addNotify
+setText(PAResourceAtoD.CreateRSBInterfaceDialog_INTERFACE_NAME, "GPIOB"); // Y (Q, aL)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aL)
+// [GUI Memory]: 140 MB (+9490kb) [00:09:39]
+// [Engine Memory]: 894 MB (+1032kb) [00:09:39]
+dismissDialog("Create Interface Port"); // aL (cp)
+// Tcl Message: startgroup 
+// TclEventType: RSB_ADD_OBJECT
+// [Engine Memory]: 943 MB (+4452kb) [00:09:39]
+// Tcl Message: create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 GPIOB 
+// TclEventType: RSB_CONNECTION_CHANGE
+// bx (cp):  Create Interface Port : addNotify
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins axi_gpio_0/GPIO2] [get_bd_intf_ports GPIOB] 
+// Tcl Message: endgroup 
+dismissDialog("Create Interface Port"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 71 MB. Current time: 2/24/23, 8:03:26 AM CST
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B (f, cp)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "UART"); // OverlayTextField (ay, ResizableWindow)
+applyEnter(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, (String) null); // O (Q, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI UART16550", 0, "AXI UART16550", 0, false); // O (Q, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI UART16550", 0); // O (Q, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI UART16550", 0, "AXI UART16550", 0, false, false, false, false, false, true); // O (Q, ResizableWindow) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// bx (cp):  Add IP : addNotify
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:axi_uart16550:2.0 axi_uart16550_0 
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // bx (cp)
+// Tcl Command: 'set_property location {6 1337 88} [get_bd_cells axi_uart16550_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {6 1337 88} [get_bd_cells axi_uart16550_0] 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_PIN
+// r (cp): Customize Pin: addNotify
+// Elapsed time: 11 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+dismissDialog("Customize Pin"); // r (cp)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cp): Re-customize IP: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 976 MB. GUI used memory: 72 MB. Current time: 2/24/23, 8:03:46 AM CST
+// Elapsed time: 13 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+dismissDialog("Re-customize IP"); // r (cp)
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports CLK] [get_bd_pins axi_uart16550_0/s_axi_aclk] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins axi_uart16550_0/S_AXI] -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M01_AXI] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins axi_uart16550_0/s_axi_aresetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn] 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cp): Re-customize IP: addNotify
+// Elapsed time: 31 seconds
+setText("AXI CLK Frequency", "100"); // z (cU, r)
+// Elapsed time: 79 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+dismissDialog("Re-customize IP"); // r (cp)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_intf_nets axi_interconnect_0_M01_AXI] [get_bd_cells axi_uart16550_0] 
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B (f, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Uartlite", 1, "AXI Uartlite", 0, false); // O (Q, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Uartlite", 1, "AXI Uartlite", 0, false); // O (Q, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Uartlite", 1); // O (Q, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Uartlite", 1, "AXI Uartlite", 0, false, false, false, false, false, true); // O (Q, ResizableWindow) - Double Click
+// bx (cp):  Add IP : addNotify
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:axi_uartlite:2.0 axi_uartlite_0 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // bx (cp)
+// Tcl Command: 'set_property location {6 1342 62} [get_bd_cells axi_uartlite_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {6 1342 62} [get_bd_cells axi_uartlite_0] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins axi_uartlite_0/S_AXI] -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M01_AXI] 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cp): Re-customize IP: addNotify
+// Elapsed time: 13 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+dismissDialog("Re-customize IP"); // r (cp)
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports CLK] [get_bd_pins axi_uartlite_0/s_axi_aclk] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins axi_uartlite_0/s_axi_aresetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn] 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cp): Re-customize IP: addNotify
+// Elapsed time: 14 seconds
+selectComboBox("Baud Rate (C_BAUDRATE)", "115200", 9); // E (C, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cp)
+// Tcl Command: 'set_property -dict [list CONFIG.C_BAUDRATE {115200}] [get_bd_cells axi_uartlite_0]'
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.C_BAUDRATE {115200}] [get_bd_cells axi_uartlite_0] 
+// Tcl Message: endgroup 
+// Tcl Command: 'set_property location {1490 -88} [get_bd_intf_ports GPIOA]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1490 -88} [get_bd_intf_ports GPIOA] 
+// Tcl Command: 'set_property location {1485 -64} [get_bd_intf_ports GPIOB]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1485 -64} [get_bd_intf_ports GPIOB] 
+// Tcl Command: 'set_property location {1491 -74} [get_bd_intf_ports GPIOB]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1491 -74} [get_bd_intf_ports GPIOB] 
+// Elapsed time: 12 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1355, 316, 1557, 762, false, false, false, true, false); // fS (k, cp) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins axi_uartlite_0/rx] [get_bd_pins axi_uartlite_0/tx] 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1386, 337, 1557, 762, false, false, false, true, false); // fS (k, cp) - Popup Trigger
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins axi_uartlite_0/rx] [get_bd_pins axi_uartlite_0/tx]' 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1361, 355, 1557, 762, false, false, false, true, false); // fS (k, cp) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ac (al, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_CREATE_INTERFACE_PORT, "Create Interface Port..."); // af (al, Popup.HeavyWeightWindow)
+// aL (cp): Create Interface Port: addNotify
+setText(PAResourceAtoD.CreateRSBInterfaceDialog_INTERFACE_NAME, "UART_RX", true); // Y (Q, aL)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aL)
+// [GUI Memory]: 154 MB (+7369kb) [00:13:24]
+dismissDialog("Create Interface Port"); // aL (cp)
+// Tcl Message: startgroup 
+// TclEventType: RSB_ADD_OBJECT
+// bx (cp):  Create Interface Port : addNotify
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: create_bd_intf_port -mode Master -vlnv xilinx.com:interface:uart_rtl:1.0 UART_RX 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins axi_uartlite_0/UART] [get_bd_intf_ports UART_RX] 
+// Tcl Message: endgroup 
+dismissDialog("Create Interface Port"); // bx (cp)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1361, 368, 1557, 762, false, false, false, true, false); // fS (k, cp) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ac (al, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_CREATE_INTERFACE_PORT, "Create Interface Port..."); // af (al, Popup.HeavyWeightWindow)
+// aL (cp): Create Interface Port: addNotify
+setText(PAResourceAtoD.CreateRSBInterfaceDialog_INTERFACE_NAME, "UART_TX"); // Y (Q, aL)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aL)
+// HOptionPane Warning: 'Please select a valid VLNV for the new interface port (Vivado)'
+selectButton("PAResourceAtoD.CreateRSBInterfaceDialog_SELECT_VALID_VLNV_FOR_NEW_OK", "OK"); // JButton (C, J)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aL)
+// [Engine Memory]: 997 MB (+7030kb) [00:13:45]
+dismissDialog("Create Interface Port"); // aL (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 75 MB. Current time: 2/24/23, 8:07:31 AM CST
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_intf_nets axi_uartlite_0_UART] [get_bd_intf_ports UART_RX] 
+// Elapsed time: 49 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1317, 272, 1557, 762, false, false, false, true, false); // fS (k, cp) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ac (al, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_CREATE_PORT, "Create Port..."); // af (al, Popup.HeavyWeightWindow)
+// ba (cp): Create Port: addNotify
+setText(PAResourceAtoD.CreateRSBPortDialog_PORT_NAME, "UART_RX"); // Y (Q, ba)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ba)
+dismissDialog("Create Port"); // ba (cp)
+// Tcl Message: startgroup 
+// TclEventType: RSB_ADD_OBJECT
+// bx (cp):  Create Port : addNotify
+// Tcl Message: create_bd_port -dir I UART_RX 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins /axi_uartlite_0/rx] [get_bd_ports UART_RX] 
+// Tcl Message: endgroup 
+dismissDialog("Create Port"); // bx (cp)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 748, 40, 1557, 762, false, false, false, true, false); // fS (k, cp) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ac (al, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_CREATE_PORT, "Create Port..."); // af (al, Popup.HeavyWeightWindow)
+// ba (cp): Create Port: addNotify
+setText(PAResourceAtoD.CreateRSBPortDialog_PORT_NAME, "UART_TX"); // Y (Q, ba)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ba)
+dismissDialog("Create Port"); // ba (cp)
+// Tcl Message: startgroup 
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: create_bd_port -dir O UART_TX 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins /axi_uartlite_0/tx] [get_bd_ports UART_TX] 
+// Tcl Message: endgroup 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k (j, cp)
+// Elapsed time: 155 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1085, 51, 1557, 762, false, false, false, true, false); // fS (k, cp) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ac (al, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cp): Re-customize IP: addNotify
+// Elapsed time: 38 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+dismissDialog("Re-customize IP"); // r (cp)
+// Elapsed time: 81 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // ax
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 134 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "port_swdio"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+// Tcl Command: 'file mkdir D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.srcs/sources_1/new'
+dismissDialog("Create Source File"); // F (c)
+// Tcl Message: file mkdir D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.srcs/sources_1/new 
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 138 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.srcs/sources_1/new/port_swdio.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.srcs/sources_1/new/port_swdio.v 
+// I (cp): Define Module: addNotify
+// Elapsed time: 32 seconds
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 0, (String) null, 0); // ab (Q, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "swdi", 0, "Port Name", 0); // ab (Q, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "swdi ; input ; false ; 0 ; 0", 0, "input", 1); // ab (Q, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "input", 0, "Direction", 1); // ab (Q, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 1, (String) null, 0); // ab (Q, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "swdo", 1, "Port Name", 0); // ab (Q, I)
+// Elapsed time: 213 seconds
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "swdi ; input ; false ; 0 ; 0", 0, "swdi", 0); // ab (Q, I)
+// Elapsed time: 37 seconds
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "swd_en", 0, "Port Name", 0); // ab (Q, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "swdo ; input ; false ; 0 ; 0", 1, "swdo", 0); // ab (Q, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "swd_o", 1, "Port Name", 0); // ab (Q, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 2, (String) null, 0); // ab (Q, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "swd_i", 2, "Port Name", 0); // ab (Q, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "swd_i ; input ; false ; 0 ; 0", 2, "input", 1); // ab (Q, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "output", 2, "Direction", 1); // ab (Q, I)
+// Elapsed time: 27 seconds
+selectButton(RDIResource.AbstractCombinedPanel_ADD_ELEMENT, "Add Definition"); // B (f, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 3, "input", 1); // ab (Q, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "inout", 3, "Direction", 1); // ab (Q, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; inout ; false ; 0 ; 0", 3, (String) null, 0); // ab (Q, I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "swd_io", 3, "Port Name", 0); // ab (Q, I)
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 163 MB (+1085kb) [00:28:03]
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, port_swdio (port_swdio.v)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, port_swdio (port_swdio.v)]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("port_swdio.v", 173, 583); // cl (w, cp)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 

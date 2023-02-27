@@ -1,0 +1,18 @@
+{
+    "files.exclude": {
+        "{**/*.scvd,**/*.ini,**/*.uv*}": true,
+        "{**/Listings,**/Objects,**/DebugConfig,**/OBJ}": true
+    },
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/**",
+        "${workspaceFolder}/Peripheral/ZGPIO",
+        "${workspaceFolder}/Hardware/LED",
+        "${workspaceFolder}/System/delay",
+        "${workspaceFolder}/RTE/Device/DS_CM3"
+    ],
+    "files.associations": {
+        "*.C": "c",
+        "delay.h": "c",
+        "stdint.h": "c"
+    }
+}

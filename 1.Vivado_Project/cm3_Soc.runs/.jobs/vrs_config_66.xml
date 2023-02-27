@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="synth_10" LaunchDir="D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/synth_10" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="impl_5" LaunchDir="D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/impl_5" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_10"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

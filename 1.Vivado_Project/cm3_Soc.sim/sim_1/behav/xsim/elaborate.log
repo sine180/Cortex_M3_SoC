@@ -1,0 +1,259 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 49aa5728a3684ce5b5abba2be053ae2a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L util_vector_logic_v2_0_1 -L generic_baseblocks_v2_1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_18 -L fifo_generator_v13_2_3 -L axi_data_fifo_v2_1_17 -L axi_crossbar_v2_1_19 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L xlconstant_v1_1_5 -L axi_lite_ipif_v3_0_4 -L interrupt_control_v3_1_4 -L axi_gpio_v2_0_20 -L lib_pkg_v1_0_2 -L lib_srl_fifo_v1_0_2 -L axi_uartlite_v2_0_22 -L axi_protocol_converter_v2_1_18 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_cm3_demo_behav xil_defaultlib.tb_cm3_demo xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package axi_lite_ipif_v3_0_4.ipif_pkg
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package lib_pkg_v1_0_2.lib_pkg
+Compiling module xil_defaultlib.AhbToAxiHtransSquelch
+Compiling module xil_defaultlib.AhbToAxiIncrOverride
+Compiling module xil_defaultlib.AhbToAxiStrbGen(DATA_WIDTH=32)
+Compiling module xil_defaultlib.A11AhbLiteMToAxi(DATA_WIDTH=32)
+Compiling module xil_defaultlib.AhbSToAxi(DATA_WIDTH=32)
+Compiling module xil_defaultlib.cm3_tscnt_48
+Compiling module xil_defaultlib.cm3_code_mux
+Compiling module xil_defaultlib.cmsdk_ahb_to_sram(AW=32'b010000)
+Compiling module xil_defaultlib.cm3_sync
+Compiling module xil_defaultlib.cm3_clk_gate
+Compiling module xil_defaultlib.cm3_dpu_fetch_ctl
+Compiling module xil_defaultlib.cm3_dpu_fetch_ahbintf
+Compiling module xil_defaultlib.cm3_dpu_fetch
+Compiling module xil_defaultlib.cm3_dpu_16bit_dec
+Compiling module xil_defaultlib.cm3_dpu_32bit_dec
+Compiling module xil_defaultlib.cm3_dpu_br_dec
+Compiling module xil_defaultlib.cm3_dpu_dec
+Compiling module xil_defaultlib.cm3_dpu_exec
+Compiling module xil_defaultlib.cm3_dpu_status
+Compiling module xil_defaultlib.cm3_dpu_alu_ctl
+Compiling module xil_defaultlib.cm3_dpu_alu_bshift
+Compiling module xil_defaultlib.cm3_dpu_alu_srtdiv
+Compiling module xil_defaultlib.cm3_dpu_alu_dp
+Compiling module xil_defaultlib.cm3_dpu_alu
+Compiling module xil_defaultlib.cm3_dpu_lsu_ctl
+Compiling module xil_defaultlib.cm3_dpu_lsu_ahbintf
+Compiling module xil_defaultlib.cm3_dpu_lsu
+Compiling module xil_defaultlib.cm3_dpu_regfile
+Compiling module xil_defaultlib.cm3_dpu_regbank
+Compiling module xil_defaultlib.cm3_dpu_etmintf
+Compiling module xil_defaultlib.cm3_dpu
+Compiling module xil_defaultlib.cm3_nvic_ppb_intf(NUM_IRQ=1,IRQ_...
+Compiling module xil_defaultlib.cm3_nvic_reg(NUM_IRQ=1,WIC_PRESE...
+Compiling module xil_defaultlib.cm3_nvic_int_state(INTS=10)
+Compiling module xil_defaultlib.cm3_nvic_preempt(WIC_PRESENT=1'b...
+Compiling module xil_defaultlib.cm3_nvic_cell
+Compiling module xil_defaultlib.cm3_nvic_cell(NUM_WIDTH=1)
+Compiling module xil_defaultlib.cm3_nvic_cell(NUM_WIDTH=2)
+Compiling module xil_defaultlib.cm3_nvic_cell(NUM_WIDTH=3)
+Compiling module xil_defaultlib.cm3_nvic_cell(NUM_WIDTH=4)
+Compiling module xil_defaultlib.cm3_nvic_cell(NUM_WIDTH=5)
+Compiling module xil_defaultlib.cm3_nvic_cell(NUM_WIDTH=6)
+Compiling module xil_defaultlib.cm3_nvic_cell(NUM_WIDTH=7)
+Compiling module xil_defaultlib.cm3_nvic_tree(MAX_WIDTH=768)
+Compiling module xil_defaultlib.cm3_nvic_main(NUM_IRQ=1,WIC_PRES...
+Compiling module xil_defaultlib.cm3_nvic(NUM_IRQ=1,WIC_PRESENT=1...
+Compiling module xil_defaultlib.cm3_mpu_ppb_intf(MPU_PRESENT=1'b...
+Compiling module xil_defaultlib.cm3_mpu_align(MPU_PRESENT=1'b1)
+Compiling module xil_defaultlib.cm3_mpu_maskgen(MPU_PRESENT=1'b1...
+Compiling module xil_defaultlib.cm3_mpu_comp(MPU_PRESENT=1'b1)
+Compiling module xil_defaultlib.cm3_mpu_region(MPU_PRESENT=1'b1)
+Compiling module xil_defaultlib.cm3_mpu_regions(MPU_PRESENT=1'b1...
+Compiling module xil_defaultlib.cm3_mpu_ahb_ctl(MPU_PRESENT=1'b1...
+Compiling module xil_defaultlib.cm3_mpu_full(MPU_PRESENT=1'b1)
+Compiling module xil_defaultlib.cm3_mpu_default(MPU_PRESENT=1'b1...
+Compiling module xil_defaultlib.cm3_mpu(MPU_PRESENT=1'b1)
+Compiling module xil_defaultlib.cm3_mtx_input_stage_dcore
+Compiling module xil_defaultlib.cm3_mtx_input_stage_icore
+Compiling module xil_defaultlib.cm3_mtx_input_stage_dap
+Compiling module xil_defaultlib.cm3_mtx_decode_dcore(BB_PRESENT=...
+Compiling module xil_defaultlib.cm3_mtx_decode_icore
+Compiling module xil_defaultlib.cm3_mtx_decode_dap(BB_PRESENT=1'...
+Compiling module xil_defaultlib.cm3_mtx_bit_master
+Compiling module xil_defaultlib.cm3_mtx_output_stage_icode
+Compiling module xil_defaultlib.cm3_mtx_output_stage_dcode
+Compiling module xil_defaultlib.cm3_mtx_output_stage_sys
+Compiling module xil_defaultlib.cm3_mtx_output_stage_ppb
+Compiling module xil_defaultlib.cm3_bus_matrix(BB_PRESENT=1'b1)
+Compiling module xil_defaultlib.cm3_dap_ahb_ap_slv
+Compiling module xil_defaultlib.cm3_dap_ahb_ap_mst
+Compiling module xil_defaultlib.cm3_dap_ahb_ap_sync
+Compiling module xil_defaultlib.cm3_dap_ahb_ap_sync(GLITCH_CHECK...
+Compiling module xil_defaultlib.cm3_dap_ahb_ap
+Compiling module xil_defaultlib.cm3_ppb_decoder
+Compiling module xil_defaultlib.cm3_fpb
+Compiling module xil_defaultlib.cm3_dwt_apb_if(TRACE_LVL=0)
+Compiling module xil_defaultlib.cm3_dwt_comp(TRACE_LVL=0)
+Compiling module xil_defaultlib.cm3_dwt_packet_state(TRACE_LVL=0...
+Compiling module xil_defaultlib.cm3_dwt_packet_gen(TRACE_LVL=0)
+Compiling module xil_defaultlib.cm3_dwt(TRACE_LVL=0)
+Compiling module xil_defaultlib.cm3_ppb_ahb_to_apb
+Compiling module xil_defaultlib.cm3_itm_if(TRACE_LVL=0)
+Compiling module xil_defaultlib.cm3_itm_ts(TRACE_LVL=0)
+Compiling module xil_defaultlib.cm3_itm_arb(TRACE_LVL=0)
+Compiling module xil_defaultlib.cm3_itm_fifo_byte(TRACE_LVL=0)
+Compiling module xil_defaultlib.cm3_itm_fifo(TRACE_LVL=0)
+Compiling module xil_defaultlib.cm3_itm_emit(TRACE_LVL=0)
+Compiling module xil_defaultlib.cm3_itm(TRACE_LVL=0)
+Compiling module xil_defaultlib.cm3_htm_port(TRACE_LVL=0)
+Compiling module xil_defaultlib.CORTEXM3(MPU_PRESENT=1'b1,NUM_IR...
+Compiling module xil_defaultlib.cm3_wic(WIC_PRESENT=1'b0,WIC_LIN...
+Compiling module xil_defaultlib.DAPSwjWatcher(JTAG_PRESENT=1'b0)
+Compiling module xil_defaultlib.DAPSwDpProtocol
+Compiling module xil_defaultlib.DAPJtagDpProtocol(JTAG_PRESENT=1...
+Compiling module xil_defaultlib.DAPDpIMux(JTAG_PRESENT=1'b0)
+Compiling module xil_defaultlib.DAPSwDpApbIf
+Compiling module xil_defaultlib.DAPDpEnSync
+Compiling module xil_defaultlib.DAPDpApbSync
+Compiling module xil_defaultlib.DAPDpSync
+Compiling module xil_defaultlib.DAPSwDpSync
+Compiling module xil_defaultlib.DAPSWJDP(JTAG_PRESENT=1'b0)
+Compiling module xil_defaultlib.cm3_etm_apb_if(TRACE_LVL=0)
+Compiling module xil_defaultlib.cm3_etm_control_reg(TRACE_LVL=0)
+Compiling module xil_defaultlib.cm3_etm_clk_gate
+Compiling module xil_defaultlib.cm3_etm_res_control(TRACE_LVL=0)
+Compiling module xil_defaultlib.cm3_etm_event_gen(TRACE_LVL=0)
+Compiling module xil_defaultlib.cm3_etm_trig_gen(TRACE_LVL=0)
+Compiling module xil_defaultlib.cm3_etm_trc_en(TRACE_LVL=0)
+Compiling module xil_defaultlib.cm3_etm_trigger(TRACE_LVL=0)
+Compiling module xil_defaultlib.cm3_etm_gen(TRACE_LVL=0)
+Compiling module xil_defaultlib.cm3_etm_fifo(TRACE_LVL=0)
+Compiling module xil_defaultlib.cm3_etm_sync_count(TRACE_LVL=0)
+Compiling module xil_defaultlib.cm3_etm_trace(TRACE_LVL=0)
+Compiling module xil_defaultlib.cm3_etm_trace_out(TRACE_LVL=0)
+Compiling module xil_defaultlib.CM3ETM(TRACE_LVL=0)
+Compiling module xil_defaultlib.cm3_tpiu_apb_if(TRACE_LVL=0)
+Compiling module xil_defaultlib.cm3_tpiu_atb_fifo(PORT_PRESENT=0...
+Compiling module xil_defaultlib.cm3_tpiu_trace_fifo(PORT_PRESENT...
+Compiling module xil_defaultlib.cm3_tpiu_formatter(TRACE_LVL=0)
+Compiling module xil_defaultlib.cm3_tpiu_trace_out(TRACE_LVL=0)
+Compiling module xil_defaultlib.cm3_tpiu_trace_clk(TRACE_LVL=0)
+Compiling module xil_defaultlib.cm3_cdc_connect(IH=2)
+Compiling module xil_defaultlib.cm3_cdc_connect
+Compiling module xil_defaultlib.cm3_cdc_capt_sync
+Compiling module xil_defaultlib.cm3_tpiu_atb_sync(TRACE_LVL=0)
+Compiling module xil_defaultlib.cm3_tpiu_trace_sync(TRACE_LVL=0)
+Compiling module xil_defaultlib.cm3_tpiu(TRACE_LVL=0)
+Compiling module xil_defaultlib.cm3_rom_table(TRACE_LVL=0)
+Compiling module xil_defaultlib.CORTEXM3INTEGRATION(MPU_PRESENT=...
+Compiling module xil_defaultlib.X_TCMDBG(ADDR_WIDTH=32'b01110,IN...
+Compiling module xil_defaultlib.X_TCMDBG(ADDR_WIDTH=32'b01110,IN...
+Compiling module xil_defaultlib.CortexM3DbgAXI(MPU_PRESENT=1'b1,...
+Compiling module xil_defaultlib.cm3_core_CORTEXM3_AXI_0_0
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.address_decoder [\address_decoder(c_bus_awidth=9,...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.slave_attachment [\slave_attachment(c_ard_addr_ran...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.axi_lite_ipif [\axi_lite_ipif(c_s_axi_addr_widt...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_single_bit=0,c_vecto...]
+Compiling architecture imp of entity axi_gpio_v2_0_20.GPIO_Core [\GPIO_Core(c_aw=9,c_gpio_width=8...]
+Compiling architecture imp of entity axi_gpio_v2_0_20.axi_gpio [\axi_gpio(c_family="zynq",c_gpio...]
+Compiling architecture cm3_core_axi_gpio_0_0_arch of entity xil_defaultlib.cm3_core_axi_gpio_0_0 [cm3_core_axi_gpio_0_0_default]
+Compiling module xil_defaultlib.m00_couplers_imp_WCSOSO
+Compiling module xil_defaultlib.m01_couplers_imp_178BK2X
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_axi2ve...
+Compiling module axi_register_slice_v2_1_18.axi_register_slice_v2_1_18_axic_...
+Compiling module axi_register_slice_v2_1_18.axi_register_slice_v2_1_18_axic_...
+Compiling module axi_register_slice_v2_1_18.axi_register_slice_v2_1_18_axic_...
+Compiling module axi_register_slice_v2_1_18.axi_register_slice_v2_1_18_axic_...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_vector...
+Compiling module axi_register_slice_v2_1_18.axi_register_slice_v2_1_18_axi_r...
+Compiling module axi_protocol_converter_v2_1_18.axi_protocol_converter_v2_1_18_b...
+Compiling module axi_protocol_converter_v2_1_18.axi_protocol_converter_v2_1_18_b...
+Compiling module axi_protocol_converter_v2_1_18.axi_protocol_converter_v2_1_18_b...
+Compiling module axi_protocol_converter_v2_1_18.axi_protocol_converter_v2_1_18_b...
+Compiling module axi_protocol_converter_v2_1_18.axi_protocol_converter_v2_1_18_b...
+Compiling module axi_protocol_converter_v2_1_18.axi_protocol_converter_v2_1_18_b...
+Compiling module axi_protocol_converter_v2_1_18.axi_protocol_converter_v2_1_18_b...
+Compiling module axi_protocol_converter_v2_1_18.axi_protocol_converter_v2_1_18_b...
+Compiling module axi_protocol_converter_v2_1_18.axi_protocol_converter_v2_1_18_b...
+Compiling module axi_protocol_converter_v2_1_18.axi_protocol_converter_v2_1_18_b...
+Compiling module axi_protocol_converter_v2_1_18.axi_protocol_converter_v2_1_18_b...
+Compiling module axi_protocol_converter_v2_1_18.axi_protocol_converter_v2_1_18_b...
+Compiling module axi_protocol_converter_v2_1_18.axi_protocol_converter_v2_1_18_b...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_axi2ve...
+Compiling module axi_register_slice_v2_1_18.axi_register_slice_v2_1_18_axic_...
+Compiling module axi_register_slice_v2_1_18.axi_register_slice_v2_1_18_axic_...
+Compiling module axi_register_slice_v2_1_18.axi_register_slice_v2_1_18_axic_...
+Compiling module axi_register_slice_v2_1_18.axi_register_slice_v2_1_18_axic_...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_vector...
+Compiling module axi_register_slice_v2_1_18.axi_register_slice_v2_1_18_axi_r...
+Compiling module axi_protocol_converter_v2_1_18.axi_protocol_converter_v2_1_18_b...
+Compiling module axi_protocol_converter_v2_1_18.axi_protocol_converter_v2_1_18_a...
+Compiling module xil_defaultlib.cm3_core_auto_pc_0
+Compiling module xil_defaultlib.s00_couplers_imp_13AR556
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_addr_arbite...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_carry_...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_addr_decode...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_splitter(C_...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_splitter
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_register_slice_v2_1_18.axi_register_slice_v2_1_18_axic_...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_decerr_slav...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_crossbar_sa...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_axi_crossba...
+Compiling module xil_defaultlib.cm3_core_xbar_0
+Compiling module xil_defaultlib.cm3_core_axi_interconnect_0_0
+Compiling architecture rtl of entity axi_uartlite_v2_0_22.baudrate [\baudrate(c_ratio=326)\]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_mtbf_stages=4)\]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.cntr_incr_decr_addn_f [\cntr_incr_decr_addn_f(c_size=5,...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=16,c_dwidth=...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=8,c_fam...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(c_dwidth=8,c_family=...]
+Compiling architecture rtl of entity axi_uartlite_v2_0_22.uartlite_rx [\uartlite_rx(c_family="zynq")(1,...]
+Compiling architecture rtl of entity axi_uartlite_v2_0_22.uartlite_tx [\uartlite_tx(c_family="zynq")(1,...]
+Compiling architecture rtl of entity axi_uartlite_v2_0_22.uartlite_core [\uartlite_core(c_family="zynq",c...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.address_decoder [\address_decoder(c_bus_awidth=4,...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.slave_attachment [\slave_attachment(c_ard_addr_ran...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.axi_lite_ipif [\axi_lite_ipif(c_s_axi_addr_widt...]
+Compiling architecture rtl of entity axi_uartlite_v2_0_22.axi_uartlite [\axi_uartlite(c_family="zynq",c_...]
+Compiling architecture cm3_core_axi_uartlite_0_0_arch of entity xil_defaultlib.cm3_core_axi_uartlite_0_0 [cm3_core_axi_uartlite_0_0_defaul...]
+Compiling module unisims_ver.IOBUF
+Compiling module xil_defaultlib.port_swdio
+Compiling module xil_defaultlib.cm3_core_port_swdio_0_0
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_vector_width=2,c_mtb...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
+Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16(init="1111111111111111")(...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.upcnt_n [\upcnt_n(c_size=6)\]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.sequence_psr [sequence_psr_default]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.proc_sys_reset [\proc_sys_reset(c_family="zynq",...]
+Compiling architecture cm3_core_proc_sys_reset_0_0_arch of entity xil_defaultlib.cm3_core_proc_sys_reset_0_0 [cm3_core_proc_sys_reset_0_0_defa...]
+Compiling module util_vector_logic_v2_0_1.util_vector_logic_v2_0_1_util_ve...
+Compiling module xil_defaultlib.cm3_core_util_vector_logic_0_0
+Compiling module xlconstant_v1_1_5.xlconstant_v1_1_5_xlconstant(CON...
+Compiling module xil_defaultlib.cm3_core_xlconstant_0_0
+Compiling module xlconstant_v1_1_5.xlconstant_v1_1_5_xlconstant(CON...
+Compiling module xil_defaultlib.cm3_core_xlconstant_1_1
+Compiling module xlconstant_v1_1_5.xlconstant_v1_1_5_xlconstant(CON...
+Compiling module xil_defaultlib.cm3_core_xlconstant_2_0
+Compiling module xil_defaultlib.cm3_core_xlconstant_3_0
+Compiling module xil_defaultlib.cm3_core
+Compiling module xil_defaultlib.cm3_core_wrapper
+Compiling module xil_defaultlib.tb_cm3_demo
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_cm3_demo_behav

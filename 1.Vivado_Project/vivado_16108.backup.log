@@ -1,0 +1,95 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Feb 24 07:53:45 2023
+# Process ID: 16108
+# Current directory: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4324 D:\sine\Desktop\IC\Preliminary\Cortex_M3_SoC\Project\cm3_Soc.xpr
+# Log file: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/vivado.log
+# Journal file: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.xpr
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'open_project' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 24 07:54:02 2023...
+oC/CM3_IP/Arm_ipi_repository'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 850.453 ; gain = 182.977
+open_bd_design {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd}
+Adding cell -- Arm.com:CortexM:CORTEXM3_AXI:1.1 - CORTEXM3_AXI_0
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_2
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Successfully read diagram <cm3_core> from BD file <D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd>
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property location {2 -253 -310} [get_bd_cells axi_gpio_0]
+set_property location {5.5 1316 -38} [get_bd_cells axi_gpio_0]
+connect_bd_intf_net [get_bd_intf_pins axi_gpio_0/S_AXI] -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M00_AXI]
+startgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {8} CONFIG.C_GPIO2_WIDTH {8} CONFIG.C_IS_DUAL {1} CONFIG.C_ALL_INPUTS_2 {1} CONFIG.C_ALL_OUTPUTS {1}] [get_bd_cells axi_gpio_0]
+endgroup
+connect_bd_net [get_bd_ports CLK] [get_bd_pins axi_gpio_0/s_axi_aclk]
+connect_bd_net [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins axi_gpio_0/s_axi_aresetn]
+startgroup
+create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 GPIOA
+connect_bd_intf_net [get_bd_intf_pins axi_gpio_0/GPIO] [get_bd_intf_ports GPIOA]
+endgroup
+startgroup
+create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 GPIOB
+connect_bd_intf_net [get_bd_intf_pins axi_gpio_0/GPIO2] [get_bd_intf_ports GPIOB]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_uart16550:2.0 axi_uart16550_0
+endgroup
+set_property location {6 1337 88} [get_bd_cells axi_uart16550_0]
+connect_bd_net [get_bd_ports CLK] [get_bd_pins axi_uart16550_0/s_axi_aclk]
+connect_bd_intf_net [get_bd_intf_pins axi_uart16550_0/S_AXI] -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M01_AXI]
+connect_bd_net [get_bd_pins axi_uart16550_0/s_axi_aresetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+delete_bd_objs [get_bd_intf_nets axi_interconnect_0_M01_AXI] [get_bd_cells axi_uart16550_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_uartlite:2.0 axi_uartlite_0
+endgroup
+set_property location {6 1342 62} [get_bd_cells axi_uartlite_0]
+connect_bd_intf_net [get_bd_intf_pins axi_uartlite_0/S_AXI] -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M01_AXI]
+connect_bd_net [get_bd_ports CLK] [get_bd_pins axi_uartlite_0/s_axi_aclk]
+connect_bd_net [get_bd_pins axi_uartlite_0/s_axi_aresetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+startgroup
+set_property -dict [list CONFIG.C_BAUDRATE {115200}] [get_bd_cells axi_uartlite_0]
+endgroup
+set_property location {1490 -88} [get_bd_intf_ports GPIOA]
+set_property location {1485 -64} [get_bd_intf_ports GPIOB]
+set_property location {1491 -74} [get_bd_intf_ports GPIOB]
+connect_bd_net [get_bd_pins axi_uartlite_0/rx] [get_bd_pins axi_uartlite_0/tx]
+WARNING: [BD 41-1306] The connection to interface pin /axi_uartlite_0/rx is being overridden by the user. This pin will not be connected as a part of interface connection UART
+WARNING: [BD 41-1306] The connection to interface pin /axi_uartlite_0/tx is being overridden by the user. This pin will not be connected as a part of interface connection UART
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins axi_uartlite_0/rx] [get_bd_pins axi_uartlite_0/tx]'
+startgroup
+create_bd_intf_port -mode Master -vlnv xilinx.com:interface:uart_rtl:1.0 UART_RX
+connect_bd_intf_net [get_bd_intf_pins axi_uartlite_0/UART] [get_bd_intf_ports UART_RX]
+endgroup
+delete_bd_objs [get_bd_intf_nets axi_uartlite_0_UART] [get_bd_intf_ports UART_RX]
+startgroup
+create_bd_port -dir I UART_RX
+connect_bd_net [get_bd_pins /axi_uartlite_0/rx] [get_bd_ports UART_RX]
+WARNING: [BD 41-1306] The connection to interface pin /axi_uartlite_0/rx is being overridden by the user. This pin will not be connected as a part of interface connection UART
+endgroup
+startgroup
+create_bd_port -dir O UART_TX
+connect_bd_net [get_bd_pins /axi_uartlite_0/tx] [get_bd_ports UART_TX]
+WARNING: [BD 41-1306] The connection to interface pin /axi_uartlite_0/tx is being overridden by the user. This pin will not be connected as a part of interface connection UART
+endgroup
+file mkdir D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.srcs/sources_1/new
+close [ open D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.srcs/sources_1/new/port_swdio.v w ]
+add_files D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.srcs/sources_1/new/port_swdio.v
+update_compile_order -fileset sources_1

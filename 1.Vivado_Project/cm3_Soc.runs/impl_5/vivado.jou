@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Feb 26 02:01:11 2023
+# Process ID: 22796
+# Current directory: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/impl_5
+# Command line: vivado.exe -log cm3_core_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source cm3_core_wrapper.tcl -notrace
+# Log file: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/impl_5/cm3_core_wrapper.vdi
+# Journal file: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/impl_5\vivado.jou
+#-----------------------------------------------------------
+source cm3_core_wrapper.tcl -notrace

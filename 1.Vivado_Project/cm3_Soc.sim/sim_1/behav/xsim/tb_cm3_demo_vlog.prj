@@ -1,0 +1,38 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../cm3_Soc.srcs/sources_1/bd/cm3_core/ipshared/ea75/rtl" --include "../../../../cm3_Soc.srcs/sources_1/bd/cm3_core/ipshared/ec67/hdl" \
+"../../../../cm3_Soc.srcs/sources_1/new/port_swdio.v" \
+"../../../../cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/cm3_dap_ahb_ap.v" \
+"../../../../cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/cm3_wic.v" \
+"../../../../cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/cm3_nvic.v" \
+"../../../../cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/cm3_dwt.v" \
+"../../../../cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/AhbToAxi.v" \
+"../../../../cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/cm3_mpu.v" \
+"../../../../cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/cm3_bus_matrix.v" \
+"../../../../cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/models.v" \
+"../../../../cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/cmsdk.v" \
+"../../../../cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/cm3_tpiu.v" \
+"../../../../cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/dapswjdp.v" \
+"../../../../cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/cm3_fpb.v" \
+"../../../../cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/cm3_dpu.v" \
+"../../../../cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/cm3_itm.v" \
+"../../../../cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/cm3_etm.v" \
+"../../../../cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/cortexm3.v" \
+"../../../../cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/cortexm3_integration.v" \
+"../../../../cm3_Soc.ip_user_files/bd/cm3_core/ip/cm3_core_CORTEXM3_AXI_0_0/sim/cm3_core_CORTEXM3_AXI_0_0.v" \
+"../../../../cm3_Soc.ip_user_files/bd/cm3_core/ip/cm3_core_util_vector_logic_0_0/sim/cm3_core_util_vector_logic_0_0.v" \
+"../../../../cm3_Soc.ip_user_files/bd/cm3_core/ip/cm3_core_xbar_0/sim/cm3_core_xbar_0.v" \
+"../../../../cm3_Soc.ip_user_files/bd/cm3_core/ip/cm3_core_xlconstant_0_0/sim/cm3_core_xlconstant_0_0.v" \
+"../../../../cm3_Soc.ip_user_files/bd/cm3_core/ip/cm3_core_xlconstant_2_0/sim/cm3_core_xlconstant_2_0.v" \
+"../../../../cm3_Soc.ip_user_files/bd/cm3_core/ip/cm3_core_xlconstant_1_1/sim/cm3_core_xlconstant_1_1.v" \
+"../../../../cm3_Soc.ip_user_files/bd/cm3_core/ip/cm3_core_port_swdio_0_0/sim/cm3_core_port_swdio_0_0.v" \
+"../../../../cm3_Soc.ip_user_files/bd/cm3_core/sim/cm3_core.v" \
+"../../../../cm3_Soc.ip_user_files/bd/cm3_core/ip/cm3_core_xlconstant_3_0/sim/cm3_core_xlconstant_3_0.v" \
+"../../../../cm3_Soc.ip_user_files/bd/cm3_core/ip/cm3_core_auto_pc_0/sim/cm3_core_auto_pc_0.v" \
+"../../../../cm3_Soc.srcs/sources_1/bd/cm3_core/hdl/cm3_core_wrapper.v" \
+"../../../../cm3_Soc.srcs/sim_1/new/tb_cm3_demo.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

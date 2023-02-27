@@ -1,0 +1,666 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Feb 25 13:15:07 2023
+# Process ID: 3872
+# Current directory: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6956 D:\sine\Desktop\IC\Preliminary\Cortex_M3_SoC\Vivado_Project\cm3_Soc.xpr
+# Log file: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/vivado.log
+# Journal file: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.xpr
+INFO: [Project 1-313] Project file moved from 'D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/CM3_IP/Arm_ipi_repository'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 869.086 ; gain = 221.219
+update_compile_order -fileset sources_1
+open_run impl_3
+INFO: [Netlist 29-17] Analyzing 484 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1872.738 ; gain = 10.238
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1872.738 ; gain = 10.238
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1872.824 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+open_run: Time (s): cpu = 00:00:25 ; elapsed = 00:00:16 . Memory (MB): peak = 2051.977 ; gain = 1054.918
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+open_bd_design {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd}
+Adding cell -- Arm.com:CortexM:CORTEXM3_AXI:1.1 - CORTEXM3_AXI_0
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_2
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_3
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_1
+Adding cell -- xilinx.com:module_ref:port_swdio:1.0 - port_swdio_1
+Successfully read diagram <cm3_core> from BD file <D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd>
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+set_property PROGRAM.FILE {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/impl_3/cm3_core_wrapper.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/impl_3/cm3_core_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd}
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/impl_3/cm3_core_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+create_run synth_9 -flow {Vivado Synthesis 2018} -strategy {Vivado Synthesis Defaults} -report_strategy {Vivado Synthesis Default Reports}
+Run is defaulting to srcset: sources_1
+Run is defaulting to constrset: constrs_1
+Run is defaulting to part: xc7z010clg400-1
+current_run [get_runs synth_9]
+set_property strategy Flow_AreaOptimized_high [get_runs synth_9]
+set_property strategy Performance_Explore [get_runs impl_3]
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+[Sat Feb 25 16:10:35 2023] Launched synth_9...
+Run output will be captured here: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/synth_9/runme.log
+[Sat Feb 25 16:10:35 2023] Launched impl_2...
+Run output will be captured here: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/impl_2/runme.log
+set_property strategy Performance_Explore [get_runs impl_2]
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+create_run synth_10 -flow {Vivado Synthesis 2018} -strategy Flow_AreaOptimized_high -report_strategy {Vivado Synthesis Default Reports}
+Run is defaulting to srcset: sources_1
+Run is defaulting to constrset: constrs_1
+Run is defaulting to part: xc7z010clg400-1
+current_run [get_runs synth_10]
+set_property strategy Flow_PerfOptimized_high [get_runs synth_10]
+launch_runs impl_4 -jobs 8
+[Sat Feb 25 16:23:17 2023] Launched synth_10...
+Run output will be captured here: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/synth_10/runme.log
+[Sat Feb 25 16:23:17 2023] Launched impl_4...
+Run output will be captured here: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/impl_4/runme.log
+reset_run synth_10
+launch_runs synth_10 -jobs 8
+[Sat Feb 25 16:32:46 2023] Launched synth_10...
+Run output will be captured here: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/synth_10/runme.log
+launch_runs impl_4 -jobs 8
+[Sat Feb 25 16:38:56 2023] Launched impl_4...
+Run output will be captured here: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/impl_4/runme.log
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_3
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+reset_run impl_3
+close_design
+launch_runs impl_3 -jobs 8
+[Sat Feb 25 16:43:09 2023] Launched impl_3...
+Run output will be captured here: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/impl_3/runme.log
+reset_run synth_8
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/synth_8
+
+launch_runs synth_8 -jobs 8
+[Sat Feb 25 16:43:47 2023] Launched synth_8...
+Run output will be captured here: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/synth_8/runme.log
+open_bd_design {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd}
+open_run impl_4
+INFO: [Netlist 29-17] Analyzing 489 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3822.750 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3822.750 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3822.750 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+create_run impl_5 -parent_run synth_10 -flow {Vivado Implementation 2018} -strategy {Vivado Implementation Defaults} -report_strategy {Vivado Implementation Default Reports}
+Run is defaulting to parent run srcset: sources_1
+Run is defaulting to parent run constrset: constrs_1
+Run is defaulting to parent run part: xc7z010clg400-1
+current_run [get_runs impl_5]
+set_property strategy Performance_ExplorePostRoutePhysOpt [get_runs impl_5]
+launch_runs impl_5 -jobs 8
+[Sat Feb 25 16:55:21 2023] Launched impl_5...
+Run output will be captured here: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/impl_5/runme.log
+open_bd_design {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd}
+launch_runs impl_5 -to_step write_bitstream -jobs 8
+[Sat Feb 25 17:00:03 2023] Launched impl_5...
+Run output will be captured here: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/impl_5/runme.log
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_5 -prev_step 
+launch_runs impl_5 -to_step write_bitstream -jobs 8
+[Sat Feb 25 17:01:29 2023] Launched impl_5...
+Run output will be captured here: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/impl_5/runme.log
+open_bd_design {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd}
+startgroup
+set_property -dict [list CONFIG.C_IS_DUAL {0} CONFIG.C_ALL_OUTPUTS {0}] [get_bd_cells axi_gpio_0]
+delete_bd_objs [get_bd_intf_nets axi_gpio_0_GPIO2]
+endgroup
+delete_bd_objs [get_bd_intf_ports GPIOB]
+set_property location {1560 163} [get_bd_intf_ports GPIOA]
+startgroup
+set_property -dict [list CONFIG.C_ALL_INPUTS {0} CONFIG.C_ALL_OUTPUTS {0}] [get_bd_cells axi_gpio_0]
+endgroup
+reset_target all [get_files  D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd]
+export_ip_user_files -of_objects  [get_files  D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd] -sync -no_script -force -quiet
+save_bd_design
+Wrote  : <D:\sine\Desktop\IC\Preliminary\Cortex_M3_SoC\Vivado_Project\cm3_Soc.srcs\sources_1\bd\cm3_core\cm3_core.bd> 
+Wrote  : <D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ui/bd_5d92db35.ui> 
+generate_target all [get_files  D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd]
+WARNING: [Arm.com:CortexM:CORTEXM3_AXI:1.1-4] /CORTEXM3_AXI_0: Could not determine interrupt input port type - using default interrupt type Rising Edge. Please change this manually if necessary.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_pc/S_AXI(0) and /CORTEXM3_AXI_0/CM3_SYS_AXI3(1)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_pc/S_AXI(0) and /CORTEXM3_AXI_0/CM3_SYS_AXI3(1)
+Wrote  : <D:\sine\Desktop\IC\Preliminary\Cortex_M3_SoC\Vivado_Project\cm3_Soc.srcs\sources_1\bd\cm3_core\cm3_core.bd> 
+VHDL Output written to : D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/synth/cm3_core.v
+VHDL Output written to : D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/sim/cm3_core.v
+VHDL Output written to : D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/hdl/cm3_core_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block CORTEXM3_AXI_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block port_swdio_1 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_auto_pc_0/cm3_core_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+INFO: [HWH 41-1378] This design does not contain any "MEMORY" mapped segment for processor CORTEXM3_AXI_0
+Exporting to file D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/hw_handoff/cm3_core.hwh
+Generated Block Design Tcl file D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/hw_handoff/cm3_core_bd.tcl
+Generated Hardware Definition File D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/synth/cm3_core.hwdef
+generate_target: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 3822.750 ; gain = 0.000
+export_ip_user_files -of_objects [get_files D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd] -directory D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.ip_user_files/sim_scripts -ip_user_files_dir D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.ip_user_files -ipstatic_source_dir D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.cache/compile_simlib/modelsim} {questa=D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.cache/compile_simlib/questa} {riviera=D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.cache/compile_simlib/riviera} {activehdl=D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd] -top
+reset_run synth_10
+launch_runs synth_10 -jobs 8
+[Sat Feb 25 17:09:53 2023] Launched synth_10...
+Run output will be captured here: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/synth_10/runme.log
+launch_runs impl_5 -jobs 8
+[Sat Feb 25 17:22:29 2023] Launched impl_5...
+Run output will be captured here: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/impl_5/runme.log
+open_run synth_10 -name synth_10
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Netlist 29-17] Analyzing 508 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_CORTEXM3_AXI_0_0/cm3_core_CORTEXM3_AXI_0_0.xdc] for cell 'cm3_core_i/CORTEXM3_AXI_0/inst'
+Finished Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_CORTEXM3_AXI_0_0/cm3_core_CORTEXM3_AXI_0_0.xdc] for cell 'cm3_core_i/CORTEXM3_AXI_0/inst'
+Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_proc_sys_reset_0_0/cm3_core_proc_sys_reset_0_0_board.xdc] for cell 'cm3_core_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_proc_sys_reset_0_0/cm3_core_proc_sys_reset_0_0_board.xdc] for cell 'cm3_core_i/proc_sys_reset_0/U0'
+Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_proc_sys_reset_0_0/cm3_core_proc_sys_reset_0_0.xdc] for cell 'cm3_core_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_proc_sys_reset_0_0/cm3_core_proc_sys_reset_0_0.xdc] for cell 'cm3_core_i/proc_sys_reset_0/U0'
+Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_axi_gpio_0_0/cm3_core_axi_gpio_0_0_board.xdc] for cell 'cm3_core_i/axi_gpio_0/U0'
+Finished Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_axi_gpio_0_0/cm3_core_axi_gpio_0_0_board.xdc] for cell 'cm3_core_i/axi_gpio_0/U0'
+Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_axi_gpio_0_0/cm3_core_axi_gpio_0_0.xdc] for cell 'cm3_core_i/axi_gpio_0/U0'
+Finished Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_axi_gpio_0_0/cm3_core_axi_gpio_0_0.xdc] for cell 'cm3_core_i/axi_gpio_0/U0'
+Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_axi_uartlite_0_0/cm3_core_axi_uartlite_0_0_board.xdc] for cell 'cm3_core_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_axi_uartlite_0_0/cm3_core_axi_uartlite_0_0_board.xdc] for cell 'cm3_core_i/axi_uartlite_0/U0'
+Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_axi_uartlite_0_0/cm3_core_axi_uartlite_0_0.xdc] for cell 'cm3_core_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_axi_uartlite_0_0/cm3_core_axi_uartlite_0_0.xdc] for cell 'cm3_core_i/axi_uartlite_0/U0'
+Parsing XDC File [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc]
+WARNING: [Vivado 12-584] No ports matched 'GPIOA_tri_o[7]'. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIOA_tri_o[6]'. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIOA_tri_o[5]'. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIOA_tri_o[4]'. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIOA_tri_o[3]'. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIOA_tri_o[2]'. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIOA_tri_o[1]'. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIOA_tri_o[0]'. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIOB_tri_i[7]'. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIOB_tri_i[6]'. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIOB_tri_i[5]'. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIOB_tri_i[4]'. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIOB_tri_i[3]'. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIOB_tri_i[2]'. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIOB_tri_i[1]'. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIOB_tri_i[0]'. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIOA_tri_o[7]'. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIOA_tri_o[6]'. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIOA_tri_o[5]'. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIOA_tri_o[4]'. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIOA_tri_o[3]'. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIOA_tri_o[2]'. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIOA_tri_o[1]'. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIOA_tri_o[0]'. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIOB_tri_i[7]'. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIOB_tri_i[6]'. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIOB_tri_i[5]'. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIOB_tri_i[4]'. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIOB_tri_i[3]'. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIOB_tri_i[2]'. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIOB_tri_i[1]'. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIOB_tri_i[0]'. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 4493.668 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 9 instances
+
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_CORTEXM3_AXI_0_0/cm3_core_CORTEXM3_AXI_0_0.xdc] for cell 'cm3_core_i/CORTEXM3_AXI_0/inst'
+Finished Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_CORTEXM3_AXI_0_0/cm3_core_CORTEXM3_AXI_0_0.xdc] for cell 'cm3_core_i/CORTEXM3_AXI_0/inst'
+Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_proc_sys_reset_0_0/cm3_core_proc_sys_reset_0_0_board.xdc] for cell 'cm3_core_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_proc_sys_reset_0_0/cm3_core_proc_sys_reset_0_0_board.xdc] for cell 'cm3_core_i/proc_sys_reset_0/U0'
+Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_proc_sys_reset_0_0/cm3_core_proc_sys_reset_0_0.xdc] for cell 'cm3_core_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_proc_sys_reset_0_0/cm3_core_proc_sys_reset_0_0.xdc] for cell 'cm3_core_i/proc_sys_reset_0/U0'
+Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_axi_gpio_0_0/cm3_core_axi_gpio_0_0_board.xdc] for cell 'cm3_core_i/axi_gpio_0/U0'
+Finished Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_axi_gpio_0_0/cm3_core_axi_gpio_0_0_board.xdc] for cell 'cm3_core_i/axi_gpio_0/U0'
+Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_axi_gpio_0_0/cm3_core_axi_gpio_0_0.xdc] for cell 'cm3_core_i/axi_gpio_0/U0'
+Finished Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_axi_gpio_0_0/cm3_core_axi_gpio_0_0.xdc] for cell 'cm3_core_i/axi_gpio_0/U0'
+Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_axi_uartlite_0_0/cm3_core_axi_uartlite_0_0_board.xdc] for cell 'cm3_core_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_axi_uartlite_0_0/cm3_core_axi_uartlite_0_0_board.xdc] for cell 'cm3_core_i/axi_uartlite_0/U0'
+Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_axi_uartlite_0_0/cm3_core_axi_uartlite_0_0.xdc] for cell 'cm3_core_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_axi_uartlite_0_0/cm3_core_axi_uartlite_0_0.xdc] for cell 'cm3_core_i/axi_uartlite_0/U0'
+Parsing XDC File [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc]
+Finished Parsing XDC File [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+current_design impl_4
+close_design
+reset_run synth_10
+launch_runs synth_10 -jobs 8
+[Sat Feb 25 17:32:27 2023] Launched synth_10...
+Run output will be captured here: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/synth_10/runme.log
+close_design
+open_bd_design {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd}
+launch_runs impl_5 -jobs 8
+[Sat Feb 25 17:42:14 2023] Launched impl_5...
+Run output will be captured here: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/impl_5/runme.log
+reset_run impl_5
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+open_run synth_10 -name synth_10
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Netlist 29-17] Analyzing 508 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_CORTEXM3_AXI_0_0/cm3_core_CORTEXM3_AXI_0_0.xdc] for cell 'cm3_core_i/CORTEXM3_AXI_0/inst'
+Finished Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_CORTEXM3_AXI_0_0/cm3_core_CORTEXM3_AXI_0_0.xdc] for cell 'cm3_core_i/CORTEXM3_AXI_0/inst'
+Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_proc_sys_reset_0_0/cm3_core_proc_sys_reset_0_0_board.xdc] for cell 'cm3_core_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_proc_sys_reset_0_0/cm3_core_proc_sys_reset_0_0_board.xdc] for cell 'cm3_core_i/proc_sys_reset_0/U0'
+Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_proc_sys_reset_0_0/cm3_core_proc_sys_reset_0_0.xdc] for cell 'cm3_core_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_proc_sys_reset_0_0/cm3_core_proc_sys_reset_0_0.xdc] for cell 'cm3_core_i/proc_sys_reset_0/U0'
+Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_axi_gpio_0_0/cm3_core_axi_gpio_0_0_board.xdc] for cell 'cm3_core_i/axi_gpio_0/U0'
+Finished Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_axi_gpio_0_0/cm3_core_axi_gpio_0_0_board.xdc] for cell 'cm3_core_i/axi_gpio_0/U0'
+Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_axi_gpio_0_0/cm3_core_axi_gpio_0_0.xdc] for cell 'cm3_core_i/axi_gpio_0/U0'
+Finished Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_axi_gpio_0_0/cm3_core_axi_gpio_0_0.xdc] for cell 'cm3_core_i/axi_gpio_0/U0'
+Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_axi_uartlite_0_0/cm3_core_axi_uartlite_0_0_board.xdc] for cell 'cm3_core_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_axi_uartlite_0_0/cm3_core_axi_uartlite_0_0_board.xdc] for cell 'cm3_core_i/axi_uartlite_0/U0'
+Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_axi_uartlite_0_0/cm3_core_axi_uartlite_0_0.xdc] for cell 'cm3_core_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [d:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_axi_uartlite_0_0/cm3_core_axi_uartlite_0_0.xdc] for cell 'cm3_core_i/axi_uartlite_0/U0'
+Parsing XDC File [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc]
+Finished Parsing XDC File [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/constrs_1/new/cm3_demo.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 4495.484 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 9 instances
+
+set_property IOSTANDARD LVCMOS33 [get_ports [list {GPIOA_tri_io[7]} {GPIOA_tri_io[6]} {GPIOA_tri_io[5]} {GPIOA_tri_io[4]} {GPIOA_tri_io[3]} {GPIOA_tri_io[2]} {GPIOA_tri_io[1]} {GPIOA_tri_io[0]}]]
+place_ports {GPIOA_tri_io[7]} T12
+place_ports {GPIOA_tri_io[6]} U12
+place_ports {GPIOA_tri_io[5]} V12
+place_ports {GPIOA_tri_io[4]} W13
+place_ports {GPIOA_tri_io[3]} T20
+place_ports {GPIOA_tri_io[2]} U20
+place_ports {GPIOA_tri_io[1]} V20
+place_ports {GPIOA_tri_io[0]} W20
+save_constraints
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 4495.484 ; gain = 0.000
+launch_runs impl_5 -jobs 8
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 4495.484 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 4495.484 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 4495.484 ; gain = 0.000
+[Sat Feb 25 17:45:01 2023] Launched impl_5...
+Run output will be captured here: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/impl_5/runme.log
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+open_run impl_5
+INFO: [Netlist 29-17] Analyzing 497 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 4495.484 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 4495.484 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 4495.484 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 9 instances
+
+open_run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 4495.484 ; gain = 0.000
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+launch_runs impl_5 -to_step write_bitstream -jobs 8
+[Sat Feb 25 17:57:18 2023] Launched impl_5...
+Run output will be captured here: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/impl_5/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/impl_5/cm3_core_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd}
+set_property offset 0x40010000 [get_bd_addr_segs {CORTEXM3_AXI_0/CM3_SYS_AXI3/SEG_axi_uartlite_0_Reg}]
+connect_bd_net [get_bd_pins CORTEXM3_AXI_0/SYSRESETREQ] [get_bd_pins proc_sys_reset_0/mb_debug_sys_rst]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /CORTEXM3_AXI_0/SYSRESETREQ(undef) and /proc_sys_reset_0/mb_debug_sys_rst(rst)
+save_bd_design
+Wrote  : <D:\sine\Desktop\IC\Preliminary\Cortex_M3_SoC\Vivado_Project\cm3_Soc.srcs\sources_1\bd\cm3_core\cm3_core.bd> 
+Wrote  : <D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ui/bd_5d92db35.ui> 
+validate_bd_design
+WARNING: [Arm.com:CortexM:CORTEXM3_AXI:1.1-4] /CORTEXM3_AXI_0: Could not determine interrupt input port type - using default interrupt type Rising Edge. Please change this manually if necessary.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_pc/S_AXI(0) and /CORTEXM3_AXI_0/CM3_SYS_AXI3(1)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_pc/S_AXI(0) and /CORTEXM3_AXI_0/CM3_SYS_AXI3(1)
+reset_target all [get_files  D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd]
+export_ip_user_files -of_objects  [get_files  D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd] -sync -no_script -force -quiet
+generate_target all [get_files  D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd]
+INFO: [BD 41-1662] The design 'cm3_core.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <D:\sine\Desktop\IC\Preliminary\Cortex_M3_SoC\Vivado_Project\cm3_Soc.srcs\sources_1\bd\cm3_core\cm3_core.bd> 
+VHDL Output written to : D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/synth/cm3_core.v
+VHDL Output written to : D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/sim/cm3_core.v
+VHDL Output written to : D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/hdl/cm3_core_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block CORTEXM3_AXI_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block port_swdio_1 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_auto_pc_0/cm3_core_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+INFO: [HWH 41-1378] This design does not contain any "MEMORY" mapped segment for processor CORTEXM3_AXI_0
+Exporting to file D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/hw_handoff/cm3_core.hwh
+Generated Block Design Tcl file D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/hw_handoff/cm3_core_bd.tcl
+Generated Hardware Definition File D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/synth/cm3_core.hwdef
+export_ip_user_files -of_objects [get_files D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd] -directory D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.ip_user_files/sim_scripts -ip_user_files_dir D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.ip_user_files -ipstatic_source_dir D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.cache/compile_simlib/modelsim} {questa=D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.cache/compile_simlib/questa} {riviera=D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.cache/compile_simlib/riviera} {activehdl=D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd] -top
+reset_run synth_10
+launch_runs impl_5 -jobs 8
+WARNING: [Project 1-478] Design 'synth_10' is stale and will not be used when launching 'impl_5'
+[Sat Feb 25 18:27:52 2023] Launched synth_10...
+Run output will be captured here: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/synth_10/runme.log
+[Sat Feb 25 18:27:52 2023] Launched impl_5...
+Run output will be captured here: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/impl_5/runme.log
+launch_runs impl_5 -to_step write_bitstream -jobs 8
+[Sat Feb 25 18:51:16 2023] Launched impl_5...
+Run output will be captured here: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/impl_5/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/impl_5/cm3_core_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd}
+delete_bd_objs [get_bd_nets CORTEXM3_AXI_0_SYSRESETREQ]
+save_bd_design
+Wrote  : <D:\sine\Desktop\IC\Preliminary\Cortex_M3_SoC\Vivado_Project\cm3_Soc.srcs\sources_1\bd\cm3_core\cm3_core.bd> 
+Wrote  : <D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ui/bd_5d92db35.ui> 
+reset_target all [get_files  D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd]
+export_ip_user_files -of_objects  [get_files  D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd] -sync -no_script -force -quiet
+generate_target all [get_files  D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd]
+WARNING: [Arm.com:CortexM:CORTEXM3_AXI:1.1-4] /CORTEXM3_AXI_0: Could not determine interrupt input port type - using default interrupt type Rising Edge. Please change this manually if necessary.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_pc/S_AXI(0) and /CORTEXM3_AXI_0/CM3_SYS_AXI3(1)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_pc/S_AXI(0) and /CORTEXM3_AXI_0/CM3_SYS_AXI3(1)
+Wrote  : <D:\sine\Desktop\IC\Preliminary\Cortex_M3_SoC\Vivado_Project\cm3_Soc.srcs\sources_1\bd\cm3_core\cm3_core.bd> 
+VHDL Output written to : D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/synth/cm3_core.v
+VHDL Output written to : D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/sim/cm3_core.v
+VHDL Output written to : D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/hdl/cm3_core_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block CORTEXM3_AXI_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block port_swdio_1 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_auto_pc_0/cm3_core_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+INFO: [HWH 41-1378] This design does not contain any "MEMORY" mapped segment for processor CORTEXM3_AXI_0
+Exporting to file D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/hw_handoff/cm3_core.hwh
+Generated Block Design Tcl file D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/hw_handoff/cm3_core_bd.tcl
+Generated Hardware Definition File D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/synth/cm3_core.hwdef
+export_ip_user_files -of_objects [get_files D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd] -directory D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.ip_user_files/sim_scripts -ip_user_files_dir D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.ip_user_files -ipstatic_source_dir D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.cache/compile_simlib/modelsim} {questa=D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.cache/compile_simlib/questa} {riviera=D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.cache/compile_simlib/riviera} {activehdl=D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd] -top
+reset_run synth_10
+launch_runs impl_5 -to_step write_bitstream -jobs 8
+WARNING: [Project 1-478] Design 'synth_10' is stale and will not be used when launching 'impl_5'
+[Sat Feb 25 18:59:42 2023] Launched synth_10...
+Run output will be captured here: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/synth_10/runme.log
+[Sat Feb 25 18:59:42 2023] Launched impl_5...
+Run output will be captured here: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/impl_5/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/impl_5/cm3_core_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+current_design synth_10
+open_bd_design {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd}
+set_property range 32K [get_bd_addr_segs {CORTEXM3_AXI_0/CM3_SYS_AXI3/SEG_axi_gpio_0_Reg}]
+set_property range 64K [get_bd_addr_segs {CORTEXM3_AXI_0/CM3_SYS_AXI3/SEG_axi_gpio_0_Reg}]
+set_property range 8K [get_bd_addr_segs {CORTEXM3_AXI_0/CM3_SYS_AXI3/SEG_axi_gpio_0_Reg}]
+set_property range 8K [get_bd_addr_segs {CORTEXM3_AXI_0/CM3_SYS_AXI3/SEG_axi_uartlite_0_Reg}]
+set_property offset 0x40002000 [get_bd_addr_segs {CORTEXM3_AXI_0/CM3_SYS_AXI3/SEG_axi_uartlite_0_Reg}]
+open_bd_design {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd}
+reset_target all [get_files  D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd]
+export_ip_user_files -of_objects  [get_files  D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd] -sync -no_script -force -quiet
+generate_target all [get_files  D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd]
+WARNING: [Arm.com:CortexM:CORTEXM3_AXI:1.1-4] /CORTEXM3_AXI_0: Could not determine interrupt input port type - using default interrupt type Rising Edge. Please change this manually if necessary.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_pc/S_AXI(0) and /CORTEXM3_AXI_0/CM3_SYS_AXI3(1)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_pc/S_AXI(0) and /CORTEXM3_AXI_0/CM3_SYS_AXI3(1)
+Wrote  : <D:\sine\Desktop\IC\Preliminary\Cortex_M3_SoC\Vivado_Project\cm3_Soc.srcs\sources_1\bd\cm3_core\cm3_core.bd> 
+Wrote  : <D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ui/bd_5d92db35.ui> 
+VHDL Output written to : D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/synth/cm3_core.v
+VHDL Output written to : D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/sim/cm3_core.v
+VHDL Output written to : D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/hdl/cm3_core_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block CORTEXM3_AXI_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block port_swdio_1 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ip/cm3_core_auto_pc_0/cm3_core_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+INFO: [HWH 41-1378] This design does not contain any "MEMORY" mapped segment for processor CORTEXM3_AXI_0
+Exporting to file D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/hw_handoff/cm3_core.hwh
+Generated Block Design Tcl file D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/hw_handoff/cm3_core_bd.tcl
+Generated Hardware Definition File D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/synth/cm3_core.hwdef
+export_ip_user_files -of_objects [get_files D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd] -directory D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.ip_user_files/sim_scripts -ip_user_files_dir D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.ip_user_files -ipstatic_source_dir D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.cache/compile_simlib/modelsim} {questa=D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.cache/compile_simlib/questa} {riviera=D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.cache/compile_simlib/riviera} {activehdl=D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd] -top
+reset_run synth_10
+launch_runs impl_5 -to_step write_bitstream -jobs 8
+WARNING: [Project 1-478] Design 'synth_10' is stale and will not be used when launching 'impl_5'
+[Sat Feb 25 19:26:05 2023] Launched synth_10...
+Run output will be captured here: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/synth_10/runme.log
+[Sat Feb 25 19:26:05 2023] Launched impl_5...
+Run output will be captured here: D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/impl_5/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.runs/impl_5/cm3_core_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/cm3_core.bd}
+startgroup
+set_property -dict [list CONFIG.C_S_AXI_ACLK_FREQ_HZ_d.VALUE_SRC USER] [get_bd_cells axi_uartlite_0]
+set_property -dict [list CONFIG.C_S_AXI_ACLK_FREQ_HZ {50000000} CONFIG.C_S_AXI_ACLK_FREQ_HZ_d {50}] [get_bd_cells axi_uartlite_0]
+endgroup
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+open_hw_target: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 4495.484 ; gain = 0.000
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A08870
+save_bd_design
+Wrote  : <D:\sine\Desktop\IC\Preliminary\Cortex_M3_SoC\Vivado_Project\cm3_Soc.srcs\sources_1\bd\cm3_core\cm3_core.bd> 
+Wrote  : <D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Vivado_Project/cm3_Soc.srcs/sources_1/bd/cm3_core/ui/bd_5d92db35.ui> 
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 25 22:57:00 2023...

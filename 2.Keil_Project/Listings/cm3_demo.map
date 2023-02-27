@@ -1,0 +1,423 @@
+Component: Arm Compiler for Embedded 6.18 Tool: armlink [5e4cc100]
+
+==============================================================================
+
+Section Cross References
+
+    main.o(.text.main) refers to zgpio.o(.text.ZGPIO_SetDirection) for ZGPIO_SetDirection
+    main.o(.text.main) refers to spi.o(.text.SPI_Init) for SPI_Init
+    main.o(.text.main) refers to delay.o(.text.Delay_Init) for Delay_Init
+    main.o(.text.main) refers to main.o(.data.info) for info
+    main.o(.text.main) refers to zgpio.o(.text.ZGPIO_SetBits) for ZGPIO_SetBits
+    main.o(.text.main) refers to delay.o(.text.Delay_ms) for Delay_ms
+    main.o(.text.main) refers to zgpio.o(.text.ZGPIO_ResetBits) for ZGPIO_ResetBits
+    main.o(.text.main) refers to strlen.o(.text) for strlen
+    main.o(.text.main) refers to spi.o(.text.SPI_WriteBuffer) for SPI_WriteBuffer
+    main.o(.ARM.exidx.text.main) refers to main.o(.text.main) for [Anonymous Symbol]
+    delay.o(.text.Delay_Init) refers to system_ds_cm3.o(.text.SystemCoreClockUpdate) for SystemCoreClockUpdate
+    delay.o(.text.Delay_Init) refers to system_ds_cm3.o(.data.SystemCoreClock) for SystemCoreClock
+    delay.o(.ARM.exidx.text.Delay_Init) refers to delay.o(.text.Delay_Init) for [Anonymous Symbol]
+    delay.o(.text.Delay_ms) refers to delay.o(.bss.cnt) for cnt
+    delay.o(.ARM.exidx.text.Delay_ms) refers to delay.o(.text.Delay_ms) for [Anonymous Symbol]
+    delay.o(.text.SysTick_Handler) refers to delay.o(.bss.cnt) for cnt
+    delay.o(.ARM.exidx.text.SysTick_Handler) refers to delay.o(.text.SysTick_Handler) for [Anonymous Symbol]
+    zgpio.o(.ARM.exidx.text.ZGPIO_SetDirection) refers to zgpio.o(.text.ZGPIO_SetDirection) for [Anonymous Symbol]
+    zgpio.o(.ARM.exidx.text.ZGPIO_SetBits) refers to zgpio.o(.text.ZGPIO_SetBits) for [Anonymous Symbol]
+    zgpio.o(.ARM.exidx.text.ZGPIO_ResetBits) refers to zgpio.o(.text.ZGPIO_ResetBits) for [Anonymous Symbol]
+    zgpio.o(.ARM.exidx.text.ZGPIO_WritePort) refers to zgpio.o(.text.ZGPIO_WritePort) for [Anonymous Symbol]
+    zgpio.o(.ARM.exidx.text.ZGPIO_ReadBit) refers to zgpio.o(.text.ZGPIO_ReadBit) for [Anonymous Symbol]
+    zuart.o(.ARM.exidx.text.ZUART_SendByte) refers to zuart.o(.text.ZUART_SendByte) for [Anonymous Symbol]
+    zuart.o(.ARM.exidx.text.ZUART_ReadByte) refers to zuart.o(.text.ZUART_ReadByte) for [Anonymous Symbol]
+    led.o(.text.LED_ON) refers to zgpio.o(.text.ZGPIO_SetBits) for ZGPIO_SetBits
+    led.o(.ARM.exidx.text.LED_ON) refers to led.o(.text.LED_ON) for [Anonymous Symbol]
+    led.o(.text.LED_OFF) refers to zgpio.o(.text.ZGPIO_ResetBits) for ZGPIO_ResetBits
+    led.o(.ARM.exidx.text.LED_OFF) refers to led.o(.text.LED_OFF) for [Anonymous Symbol]
+    led.o(.text.LED_Blink) refers to zgpio.o(.text.ZGPIO_SetBits) for ZGPIO_SetBits
+    led.o(.text.LED_Blink) refers to delay.o(.text.Delay_ms) for Delay_ms
+    led.o(.text.LED_Blink) refers to zgpio.o(.text.ZGPIO_ResetBits) for ZGPIO_ResetBits
+    led.o(.ARM.exidx.text.LED_Blink) refers to led.o(.text.LED_Blink) for [Anonymous Symbol]
+    spi.o(.text.SPI_Init) refers to zgpio.o(.text.ZGPIO_SetDirection) for ZGPIO_SetDirection
+    spi.o(.text.SPI_Init) refers to zgpio.o(.text.ZGPIO_SetBits) for ZGPIO_SetBits
+    spi.o(.text.SPI_Init) refers to zgpio.o(.text.ZGPIO_ResetBits) for ZGPIO_ResetBits
+    spi.o(.ARM.exidx.text.SPI_Init) refers to spi.o(.text.SPI_Init) for [Anonymous Symbol]
+    spi.o(.text.SPI_WriteByte) refers to zgpio.o(.text.ZGPIO_ResetBits) for ZGPIO_ResetBits
+    spi.o(.text.SPI_WriteByte) refers to zgpio.o(.text.ZGPIO_SetBits) for ZGPIO_SetBits
+    spi.o(.ARM.exidx.text.SPI_WriteByte) refers to spi.o(.text.SPI_WriteByte) for [Anonymous Symbol]
+    spi.o(.text.SPI_ReadByte) refers to zgpio.o(.text.ZGPIO_ResetBits) for ZGPIO_ResetBits
+    spi.o(.text.SPI_ReadByte) refers to zgpio.o(.text.ZGPIO_ReadBit) for ZGPIO_ReadBit
+    spi.o(.text.SPI_ReadByte) refers to zgpio.o(.text.ZGPIO_SetBits) for ZGPIO_SetBits
+    spi.o(.ARM.exidx.text.SPI_ReadByte) refers to spi.o(.text.SPI_ReadByte) for [Anonymous Symbol]
+    spi.o(.text.SPI_WriteBuffer) refers to zgpio.o(.text.ZGPIO_ResetBits) for ZGPIO_ResetBits
+    spi.o(.text.SPI_WriteBuffer) refers to zgpio.o(.text.ZGPIO_SetBits) for ZGPIO_SetBits
+    spi.o(.ARM.exidx.text.SPI_WriteBuffer) refers to spi.o(.text.SPI_WriteBuffer) for [Anonymous Symbol]
+    startup_ds_cm3.o(RESET) refers to startup_ds_cm3.o(STACK) for __initial_sp
+    startup_ds_cm3.o(RESET) refers to startup_ds_cm3.o(.text) for Reset_Handler
+    startup_ds_cm3.o(RESET) refers to delay.o(.text.SysTick_Handler) for SysTick_Handler
+    startup_ds_cm3.o(.text) refers to system_ds_cm3.o(.text.SystemInit) for SystemInit
+    startup_ds_cm3.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    system_ds_cm3.o(.text.SystemCoreClockUpdate) refers to system_ds_cm3.o(.data.SystemCoreClock) for SystemCoreClock
+    system_ds_cm3.o(.ARM.exidx.text.SystemCoreClockUpdate) refers to system_ds_cm3.o(.text.SystemCoreClockUpdate) for [Anonymous Symbol]
+    system_ds_cm3.o(.text.SystemInit) refers to system_ds_cm3.o(.data.SystemCoreClock) for SystemCoreClock
+    system_ds_cm3.o(.ARM.exidx.text.SystemInit) refers to system_ds_cm3.o(.text.SystemInit) for [Anonymous Symbol]
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_ds_cm3.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_ds_cm3.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(.text.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(.text.main) for main
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing main.o(.text), (0 bytes).
+    Removing main.o(.ARM.exidx.text.main), (8 bytes).
+    Removing main.o(.ARM.use_no_argv), (4 bytes).
+    Removing delay.o(.text), (0 bytes).
+    Removing delay.o(.ARM.exidx.text.Delay_Init), (8 bytes).
+    Removing delay.o(.ARM.exidx.text.Delay_ms), (8 bytes).
+    Removing delay.o(.ARM.exidx.text.SysTick_Handler), (8 bytes).
+    Removing zgpio.o(.text), (0 bytes).
+    Removing zgpio.o(.ARM.exidx.text.ZGPIO_SetDirection), (8 bytes).
+    Removing zgpio.o(.ARM.exidx.text.ZGPIO_SetBits), (8 bytes).
+    Removing zgpio.o(.ARM.exidx.text.ZGPIO_ResetBits), (8 bytes).
+    Removing zgpio.o(.text.ZGPIO_WritePort), (8 bytes).
+    Removing zgpio.o(.ARM.exidx.text.ZGPIO_WritePort), (8 bytes).
+    Removing zgpio.o(.text.ZGPIO_ReadBit), (10 bytes).
+    Removing zgpio.o(.ARM.exidx.text.ZGPIO_ReadBit), (8 bytes).
+    Removing zuart.o(.text), (0 bytes).
+    Removing zuart.o(.text.ZUART_SendByte), (12 bytes).
+    Removing zuart.o(.ARM.exidx.text.ZUART_SendByte), (8 bytes).
+    Removing zuart.o(.text.ZUART_ReadByte), (4 bytes).
+    Removing zuart.o(.ARM.exidx.text.ZUART_ReadByte), (8 bytes).
+    Removing led.o(.text), (0 bytes).
+    Removing led.o(.text.LED_ON), (10 bytes).
+    Removing led.o(.ARM.exidx.text.LED_ON), (8 bytes).
+    Removing led.o(.text.LED_OFF), (10 bytes).
+    Removing led.o(.ARM.exidx.text.LED_OFF), (8 bytes).
+    Removing led.o(.text.LED_Blink), (30 bytes).
+    Removing led.o(.ARM.exidx.text.LED_Blink), (8 bytes).
+    Removing spi.o(.text), (0 bytes).
+    Removing spi.o(.ARM.exidx.text.SPI_Init), (8 bytes).
+    Removing spi.o(.text.SPI_WriteByte), (74 bytes).
+    Removing spi.o(.ARM.exidx.text.SPI_WriteByte), (8 bytes).
+    Removing spi.o(.text.SPI_ReadByte), (64 bytes).
+    Removing spi.o(.ARM.exidx.text.SPI_ReadByte), (8 bytes).
+    Removing spi.o(.ARM.exidx.text.SPI_WriteBuffer), (8 bytes).
+    Removing startup_ds_cm3.o(HEAP), (3072 bytes).
+    Removing system_ds_cm3.o(.text), (0 bytes).
+    Removing system_ds_cm3.o(.ARM.exidx.text.SystemCoreClockUpdate), (8 bytes).
+    Removing system_ds_cm3.o(.ARM.exidx.text.SystemInit), (8 bytes).
+
+38 unused section(s) (total 3458 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/string/strlen.c         0x00000000   Number         0  strlen.o ABSOLUTE
+    RTE/Device/DS_CM3/startup_DS_CM3.s       0x00000000   Number         0  startup_ds_cm3.o ABSOLUTE
+    ZGPIO.c                                  0x00000000   Number         0  zgpio.o ABSOLUTE
+    ZUART.c                                  0x00000000   Number         0  zuart.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    delay.c                                  0x00000000   Number         0  delay.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    led.c                                    0x00000000   Number         0  led.o ABSOLUTE
+    main.c                                   0x00000000   Number         0  main.o ABSOLUTE
+    spi.c                                    0x00000000   Number         0  spi.o ABSOLUTE
+    system_DS_CM3.c                          0x00000000   Number         0  system_ds_cm3.o ABSOLUTE
+    RESET                                    0x00000000   Section      292  startup_ds_cm3.o(RESET)
+    .ARM.Collect$$$$00000000                 0x00000124   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x00000124   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x00000128   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x0000012c   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x0000012c   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x0000012c   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    __lit__00000000                          0x00000134   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .ARM.Collect$$$$0000000D                 0x00000134   Section        0  entry10a.o(.ARM.Collect$$$$0000000D)
+    .ARM.Collect$$$$0000000F                 0x00000134   Section        0  entry11a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00002712                 0x00000134   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    .text                                    0x00000138   Section       36  startup_ds_cm3.o(.text)
+    .text                                    0x0000015c   Section        0  strlen.o(.text)
+    .text                                    0x0000016c   Section       36  init.o(.text)
+    [Anonymous Symbol]                       0x00000190   Section        0  delay.o(.text.Delay_Init)
+    [Anonymous Symbol]                       0x000001dc   Section        0  delay.o(.text.Delay_ms)
+    [Anonymous Symbol]                       0x000001f0   Section        0  spi.o(.text.SPI_Init)
+    [Anonymous Symbol]                       0x00000210   Section        0  spi.o(.text.SPI_WriteBuffer)
+    [Anonymous Symbol]                       0x00000278   Section        0  delay.o(.text.SysTick_Handler)
+    [Anonymous Symbol]                       0x00000288   Section        0  system_ds_cm3.o(.text.SystemCoreClockUpdate)
+    [Anonymous Symbol]                       0x0000029c   Section        0  system_ds_cm3.o(.text.SystemInit)
+    [Anonymous Symbol]                       0x000002b0   Section        0  zgpio.o(.text.ZGPIO_ResetBits)
+    [Anonymous Symbol]                       0x000002c0   Section        0  zgpio.o(.text.ZGPIO_SetBits)
+    [Anonymous Symbol]                       0x000002cc   Section        0  zgpio.o(.text.ZGPIO_SetDirection)
+    [Anonymous Symbol]                       0x000002ec   Section        0  main.o(.text.main)
+    i.__scatterload_copy                     0x00000332   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x00000340   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x00000342   Section       14  handlers.o(i.__scatterload_zeroinit)
+    cnt                                      0x20000018   Data           4  delay.o(.bss.cnt)
+    [Anonymous Symbol]                       0x20000018   Section        0  delay.o(.bss.cnt)
+    STACK                                    0x20000020   Section     1024  startup_ds_cm3.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$P$D$K$B$S$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$~IW$USESV6$~STKCKD$USESV7$~SHL$OTIME$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __Vectors                                0x00000000   Data           4  startup_ds_cm3.o(RESET)
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __decompress                              - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    __Vectors_End                            0x00000124   Data           0  startup_ds_cm3.o(RESET)
+    __Vectors_Size                           0x00000124   Number         0  startup_ds_cm3.o ABSOLUTE
+    __main                                   0x00000125   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x00000125   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x00000129   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x0000012d   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x0000012d   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x0000012d   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x0000012d   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_final_cpp                           0x00000135   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000D)
+    __rt_final_exit                          0x00000135   Thumb Code     0  entry11a.o(.ARM.Collect$$$$0000000F)
+    Reset_Handler                            0x00000139   Thumb Code     8  startup_ds_cm3.o(.text)
+    NMI_Handler                              0x00000141   Thumb Code     2  startup_ds_cm3.o(.text)
+    HardFault_Handler                        0x00000143   Thumb Code     2  startup_ds_cm3.o(.text)
+    MemManage_Handler                        0x00000145   Thumb Code     2  startup_ds_cm3.o(.text)
+    BusFault_Handler                         0x00000147   Thumb Code     2  startup_ds_cm3.o(.text)
+    UsageFault_Handler                       0x00000149   Thumb Code     2  startup_ds_cm3.o(.text)
+    SVC_Handler                              0x0000014b   Thumb Code     2  startup_ds_cm3.o(.text)
+    DebugMon_Handler                         0x0000014d   Thumb Code     2  startup_ds_cm3.o(.text)
+    PendSV_Handler                           0x0000014f   Thumb Code     2  startup_ds_cm3.o(.text)
+    DUALTIMER_Handler                        0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    ETHERNET_Handler                         0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    GPIO0_0_Handler                          0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    GPIO0_10_Handler                         0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    GPIO0_11_Handler                         0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    GPIO0_12_Handler                         0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    GPIO0_13_Handler                         0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    GPIO0_14_Handler                         0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    GPIO0_15_Handler                         0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    GPIO0_1_Handler                          0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    GPIO0_2_Handler                          0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    GPIO0_3_Handler                          0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    GPIO0_4_Handler                          0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    GPIO0_5_Handler                          0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    GPIO0_6_Handler                          0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    GPIO0_7_Handler                          0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    GPIO0_8_Handler                          0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    GPIO0_9_Handler                          0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    GPIO0_Handler                            0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    GPIO1_Handler                            0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    GPIO2_Handler                            0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    GPIO3_Handler                            0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    GPIO4_Handler                            0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    GPIO5_Handler                            0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    I2S_Handler                              0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    MPS2_SPI0_Handler                        0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    MPS2_SPI1_Handler                        0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    MPS2_SPI2_Handler                        0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    MPS2_SPI3_Handler                        0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    MPS2_SPI4_Handler                        0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    RESERVED10_Handler                       0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    RESERVED11_Handler                       0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    RESERVED12_Handler                       0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    RESERVED13_Handler                       0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    RESERVED14_Handler                       0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    RESERVED1_Handler                        0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    RESERVED2_Handler                        0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    RESERVED3_Handler                        0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    RESERVED4_Handler                        0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    RESERVED5_Handler                        0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    RESERVED6_Handler                        0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    RESERVED7_Handler                        0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    RESERVED8_Handler                        0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    RESERVED9_Handler                        0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    RTC_Handler                              0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    TIMER0_Handler                           0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    TIMER1_Handler                           0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    TRNG_Handler                             0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    TSC_Handler                              0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    UART0_Handler                            0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    UART1_Handler                            0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    UART2_Handler                            0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    UART3_Handler                            0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    UART4_Handler                            0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    UART_OVF_Handler                         0x00000153   Thumb Code     0  startup_ds_cm3.o(.text)
+    strlen                                   0x0000015d   Thumb Code    14  strlen.o(.text)
+    __scatterload                            0x0000016d   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x0000016d   Thumb Code     0  init.o(.text)
+    Delay_Init                               0x00000191   Thumb Code    76  delay.o(.text.Delay_Init)
+    Delay_ms                                 0x000001dd   Thumb Code    20  delay.o(.text.Delay_ms)
+    SPI_Init                                 0x000001f1   Thumb Code    32  spi.o(.text.SPI_Init)
+    SPI_WriteBuffer                          0x00000211   Thumb Code   102  spi.o(.text.SPI_WriteBuffer)
+    SysTick_Handler                          0x00000279   Thumb Code    16  delay.o(.text.SysTick_Handler)
+    SystemCoreClockUpdate                    0x00000289   Thumb Code    20  system_ds_cm3.o(.text.SystemCoreClockUpdate)
+    SystemInit                               0x0000029d   Thumb Code    20  system_ds_cm3.o(.text.SystemInit)
+    ZGPIO_ResetBits                          0x000002b1   Thumb Code    14  zgpio.o(.text.ZGPIO_ResetBits)
+    ZGPIO_SetBits                            0x000002c1   Thumb Code    12  zgpio.o(.text.ZGPIO_SetBits)
+    ZGPIO_SetDirection                       0x000002cd   Thumb Code    32  zgpio.o(.text.ZGPIO_SetDirection)
+    main                                     0x000002ed   Thumb Code    70  main.o(.text.main)
+    __scatterload_copy                       0x00000333   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x00000341   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x00000343   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    Region$$Table$$Base                      0x00000350   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00000370   Number         0  anon$$obj.o(Region$$Table)
+    SystemCoreClock                          0x20000000   Data           4  system_ds_cm3.o(.data.SystemCoreClock)
+    info                                     0x20000004   Data          17  main.o(.data.info)
+    __initial_sp                             0x20000420   Data           0  startup_ds_cm3.o(STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000125
+
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00000388, Max: 0x00010000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00000370, Max: 0x00010000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000000   0x00000124   Data   RO           87    RESET               startup_ds_cm3.o
+    0x00000124   0x00000124   0x00000000   Code   RO          106  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x00000124   0x00000124   0x00000004   Code   RO          111    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x00000128   0x00000128   0x00000004   Code   RO          114    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x0000012c   0x0000012c   0x00000000   Code   RO          116    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x0000012c   0x0000012c   0x00000000   Code   RO          118    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x0000012c   0x0000012c   0x00000008   Code   RO          119    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x00000134   0x00000134   0x00000000   Code   RO          121    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x00000134   0x00000134   0x00000000   Code   RO          123    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x00000134   0x00000134   0x00000004   Code   RO          112    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x00000138   0x00000138   0x00000024   Code   RO           88    .text               startup_ds_cm3.o
+    0x0000015c   0x0000015c   0x0000000e   Code   RO          109    .text               mc_w.l(strlen.o)
+    0x0000016a   0x0000016a   0x00000002   PAD
+    0x0000016c   0x0000016c   0x00000024   Code   RO          125    .text               mc_w.l(init.o)
+    0x00000190   0x00000190   0x0000004c   Code   RO           12    .text.Delay_Init    delay.o
+    0x000001dc   0x000001dc   0x00000014   Code   RO           14    .text.Delay_ms      delay.o
+    0x000001f0   0x000001f0   0x00000020   Code   RO           70    .text.SPI_Init      spi.o
+    0x00000210   0x00000210   0x00000066   Code   RO           76    .text.SPI_WriteBuffer  spi.o
+    0x00000276   0x00000276   0x00000002   PAD
+    0x00000278   0x00000278   0x00000010   Code   RO           16    .text.SysTick_Handler  delay.o
+    0x00000288   0x00000288   0x00000014   Code   RO           95    .text.SystemCoreClockUpdate  system_ds_cm3.o
+    0x0000029c   0x0000029c   0x00000014   Code   RO           97    .text.SystemInit    system_ds_cm3.o
+    0x000002b0   0x000002b0   0x0000000e   Code   RO           31    .text.ZGPIO_ResetBits  zgpio.o
+    0x000002be   0x000002be   0x00000002   PAD
+    0x000002c0   0x000002c0   0x0000000c   Code   RO           29    .text.ZGPIO_SetBits  zgpio.o
+    0x000002cc   0x000002cc   0x00000020   Code   RO           27    .text.ZGPIO_SetDirection  zgpio.o
+    0x000002ec   0x000002ec   0x00000046   Code   RO            2    .text.main          main.o
+    0x00000332   0x00000332   0x0000000e   Code   RO          129    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x00000340   0x00000340   0x00000002   Code   RO          130    i.__scatterload_null  mc_w.l(handlers.o)
+    0x00000342   0x00000342   0x0000000e   Code   RO          131    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x00000350   0x00000350   0x00000020   Data   RO          128    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x00000370, Size: 0x00000420, Max: 0x00010000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x00000370   0x00000004   Data   RW           99    .data.SystemCoreClock  system_ds_cm3.o
+    0x20000004   0x00000374   0x00000011   Data   RW            4    .data.info          main.o
+    0x20000015   0x00000385   0x00000003   PAD
+    0x20000018        -       0x00000004   Zero   RW           18    .bss.cnt            delay.o
+    0x2000001c   0x00000385   0x00000004   PAD
+    0x20000020        -       0x00000400   Zero   RW           85    STACK               startup_ds_cm3.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       112          0          0          0          4       3821   delay.o
+        70          0          0         17          0        616   main.o
+       134          0          0          0          0       1806   spi.o
+        36          8        292          0       1024        824   startup_ds_cm3.o
+        40          0          0          4          0        680   system_ds_cm3.o
+        58          0          0          0          0       1442   zgpio.o
+
+    ----------------------------------------------------------------------
+       454          8        324         24       1032       9189   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+         4          0          0          3          4          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        36          8          0          0          0         68   init.o
+        14          0          0          0          0         68   strlen.o
+
+    ----------------------------------------------------------------------
+       102         16          0          0          0        136   Library Totals
+         2          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       100         16          0          0          0        136   mc_w.l
+
+    ----------------------------------------------------------------------
+       102         16          0          0          0        136   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+       556         24        324         24       1032       9397   Grand Totals
+       556         24        324         24       1032       9397   ELF Image Totals
+       556         24        324         24          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                  880 (   0.86kB)
+    Total RW  Size (RW Data + ZI Data)              1056 (   1.03kB)
+    Total ROM Size (Code + RO Data + RW Data)        904 (   0.88kB)
+
+==============================================================================
+

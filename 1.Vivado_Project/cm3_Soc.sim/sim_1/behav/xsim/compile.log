@@ -1,0 +1,181 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.srcs/sources_1/new/port_swdio.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module port_swdio
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/cm3_dap_ahb_ap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cm3_dap_ahb_ap_slv
+INFO: [VRFC 10-311] analyzing module cm3_dap_ahb_ap_mst
+INFO: [VRFC 10-311] analyzing module cm3_dap_ahb_ap_sync
+INFO: [VRFC 10-311] analyzing module cm3_dap_ahb_ap
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/cm3_wic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cm3_wic
+INFO: [VRFC 10-311] analyzing module cm3_example_pmu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/cm3_nvic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cm3_nvic_int_state
+INFO: [VRFC 10-311] analyzing module cm3_nvic_reg
+INFO: [VRFC 10-311] analyzing module cm3_nvic_cell
+INFO: [VRFC 10-311] analyzing module cm3_nvic_tree
+INFO: [VRFC 10-311] analyzing module cm3_nvic_main
+INFO: [VRFC 10-311] analyzing module cm3_nvic
+INFO: [VRFC 10-311] analyzing module cm3_nvic_ppb_intf
+INFO: [VRFC 10-311] analyzing module cm3_nvic_preempt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/cm3_dwt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cm3_dwt_packet_gen
+INFO: [VRFC 10-311] analyzing module cm3_dwt_comp
+INFO: [VRFC 10-311] analyzing module cm3_dwt_apb_if
+INFO: [VRFC 10-311] analyzing module cm3_dwt
+INFO: [VRFC 10-311] analyzing module cm3_dwt_packet_state
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/AhbToAxi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AhbMToAxi
+INFO: [VRFC 10-311] analyzing module AhbToAxiIncrOverride
+INFO: [VRFC 10-311] analyzing module AhbLiteMToAxi
+INFO: [VRFC 10-311] analyzing module A11AhbLiteMToAxi
+INFO: [VRFC 10-311] analyzing module AhbSToAxi
+INFO: [VRFC 10-311] analyzing module AhbToAxiStrbGen
+INFO: [VRFC 10-311] analyzing module AhbToAxiHtransSquelch
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/cm3_mpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cm3_mpu_align
+INFO: [VRFC 10-311] analyzing module cm3_mpu_regions
+INFO: [VRFC 10-311] analyzing module cm3_mpu_region
+INFO: [VRFC 10-311] analyzing module cm3_mpu_maskgen
+INFO: [VRFC 10-311] analyzing module cm3_mpu_ppb_intf
+INFO: [VRFC 10-311] analyzing module cm3_mpu
+INFO: [VRFC 10-311] analyzing module cm3_mpu_default
+INFO: [VRFC 10-311] analyzing module cm3_mpu_ahb_ctl
+INFO: [VRFC 10-311] analyzing module cm3_mpu_comp
+INFO: [VRFC 10-311] analyzing module cm3_mpu_full
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/cm3_bus_matrix.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cm3_mtx_decode_dcore
+INFO: [VRFC 10-311] analyzing module cm3_mtx_decode_dap
+INFO: [VRFC 10-311] analyzing module cm3_mtx_decode_icore
+INFO: [VRFC 10-311] analyzing module cm3_mtx_input_stage_icore
+INFO: [VRFC 10-311] analyzing module cm3_mtx_output_stage_icode
+INFO: [VRFC 10-311] analyzing module cm3_mtx_input_stage_dcore
+INFO: [VRFC 10-311] analyzing module cm3_mtx_input_stage_dap
+INFO: [VRFC 10-311] analyzing module cm3_bus_matrix
+INFO: [VRFC 10-311] analyzing module cm3_mtx_output_stage_sys
+INFO: [VRFC 10-311] analyzing module cm3_mtx_output_stage_dcode
+INFO: [VRFC 10-311] analyzing module cm3_mtx_output_stage_ppb
+INFO: [VRFC 10-311] analyzing module cm3_mtx_bit_master
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/models.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cm3_cdc_random
+INFO: [VRFC 10-311] analyzing module cm3_sync
+INFO: [VRFC 10-311] analyzing module cm3_etm_clk_gate
+INFO: [VRFC 10-311] analyzing module cm3_cdc_capt_sync
+INFO: [VRFC 10-311] analyzing module cm3_clk_gate
+INFO: [VRFC 10-311] analyzing module cm3_cdc_connect
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/cmsdk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cmsdk_ahb_to_sram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/cm3_tpiu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cm3_tpiu_apb_if
+INFO: [VRFC 10-311] analyzing module cm3_tpiu
+INFO: [VRFC 10-311] analyzing module cm3_tpiu_trace_out
+INFO: [VRFC 10-311] analyzing module cm3_tpiu_trace_clk
+INFO: [VRFC 10-311] analyzing module cm3_tpiu_formatter
+INFO: [VRFC 10-311] analyzing module cm3_tpiu_trace_sync
+INFO: [VRFC 10-311] analyzing module cm3_tpiu_atb_fifo
+INFO: [VRFC 10-311] analyzing module cm3_tpiu_atb_sync
+INFO: [VRFC 10-311] analyzing module cm3_tpiu_trace_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/dapswjdp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DAPDpClamp0
+INFO: [VRFC 10-311] analyzing module DAPDpIMux
+INFO: [VRFC 10-311] analyzing module DAPDpApbSync
+INFO: [VRFC 10-311] analyzing module DAPSwDpProtocol
+INFO: [VRFC 10-311] analyzing module DAPDpSync
+INFO: [VRFC 10-311] analyzing module DAPSwjWatcher
+INFO: [VRFC 10-311] analyzing module DAPDpApbIfClamp
+INFO: [VRFC 10-311] analyzing module DAPDpEnSync
+INFO: [VRFC 10-311] analyzing module DAPSwDpSync
+INFO: [VRFC 10-311] analyzing module DAPSWJDP
+INFO: [VRFC 10-311] analyzing module DAPJtagDpProtocol
+INFO: [VRFC 10-311] analyzing module DAPSwDpApbIf
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/cm3_fpb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cm3_fpb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/cm3_dpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cm3_dpu_regbank
+INFO: [VRFC 10-311] analyzing module cm3_dpu_16bit_dec
+INFO: [VRFC 10-311] analyzing module cm3_dpu_lsu_ctl
+INFO: [VRFC 10-311] analyzing module cm3_dpu_exec
+INFO: [VRFC 10-311] analyzing module cm3_dpu_alu_ctl
+INFO: [VRFC 10-311] analyzing module cm3_dpu_dec
+INFO: [VRFC 10-311] analyzing module cm3_dpu_status
+INFO: [VRFC 10-311] analyzing module cm3_dpu_fetch_ahbintf
+INFO: [VRFC 10-311] analyzing module cm3_dpu_lsu_ahbintf
+INFO: [VRFC 10-311] analyzing module cm3_dpu_fetch
+INFO: [VRFC 10-311] analyzing module cm3_dpu_32bit_dec
+INFO: [VRFC 10-311] analyzing module cm3_dpu_alu_bshift
+INFO: [VRFC 10-311] analyzing module cm3_dpu_alu
+INFO: [VRFC 10-311] analyzing module cm3_dpu_etmintf
+INFO: [VRFC 10-311] analyzing module cm3_dpu
+INFO: [VRFC 10-311] analyzing module cm3_dpu_alu_dp
+INFO: [VRFC 10-311] analyzing module cm3_dpu_br_dec
+INFO: [VRFC 10-311] analyzing module cm3_dpu_lsu
+INFO: [VRFC 10-311] analyzing module cm3_dpu_alu_srtdiv
+INFO: [VRFC 10-311] analyzing module cm3_dpu_regfile
+INFO: [VRFC 10-311] analyzing module cm3_dpu_fetch_ctl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/cm3_itm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cm3_itm_emit
+INFO: [VRFC 10-311] analyzing module cm3_itm
+INFO: [VRFC 10-311] analyzing module cm3_itm_if
+INFO: [VRFC 10-311] analyzing module cm3_itm_fifo_byte
+INFO: [VRFC 10-311] analyzing module cm3_itm_ts
+INFO: [VRFC 10-311] analyzing module cm3_itm_arb
+INFO: [VRFC 10-311] analyzing module cm3_itm_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/cm3_etm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CM3ETM
+INFO: [VRFC 10-311] analyzing module cm3_etm_control_reg
+INFO: [VRFC 10-311] analyzing module cm3_etm_res_control
+INFO: [VRFC 10-311] analyzing module cm3_etm_trace_out
+INFO: [VRFC 10-311] analyzing module cm3_etm_event_gen
+INFO: [VRFC 10-311] analyzing module cm3_etm_fifo
+INFO: [VRFC 10-311] analyzing module cm3_etm_trace
+INFO: [VRFC 10-311] analyzing module cm3_etm_trc_en
+INFO: [VRFC 10-311] analyzing module cm3_etm_trigger
+INFO: [VRFC 10-311] analyzing module cm3_etm_gen
+INFO: [VRFC 10-311] analyzing module cm3_etm_trig_gen
+INFO: [VRFC 10-311] analyzing module cm3_etm_apb_if
+INFO: [VRFC 10-311] analyzing module cm3_etm_sync_count
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/cortexm3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cm3_htm_port
+INFO: [VRFC 10-311] analyzing module cm3_ppb_ahb_to_apb
+INFO: [VRFC 10-311] analyzing module CORTEXM3
+INFO: [VRFC 10-311] analyzing module cm3_ppb_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/cortexm3_integration.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cm3_code_mux
+INFO: [VRFC 10-311] analyzing module cm3_rom_table
+INFO: [VRFC 10-311] analyzing module cm3_tscnt_48
+INFO: [VRFC 10-311] analyzing module cm3_flash_mux
+INFO: [VRFC 10-311] analyzing module input_stage_t
+INFO: [VRFC 10-311] analyzing module matrix_decode_t
+INFO: [VRFC 10-311] analyzing module output_stage_t
+INFO: [VRFC 10-311] analyzing module output_arb_t
+INFO: [VRFC 10-311] analyzing module X_TCMDBG
+INFO: [VRFC 10-311] analyzing module CortexM3DbgAXI
+INFO: [VRFC 10-2458] undeclared symbol exrespc, assumed default net type wire [D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.ip_user_files/bd/cm3_core/ipshared/ea75/rtl/cortexm3_integration.v:1836]
+INFO: [VRFC 10-311] analyzing module CORTEXM3INTEGRATION
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.ip_user_files/bd/cm3_core/ip/cm3_core_CORTEXM3_AXI_0_0/sim/cm3_core_CORTEXM3_AXI_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cm3_core_CORTEXM3_AXI_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.ip_user_files/bd/cm3_core/ip/cm3_core_util_vector_logic_0_0/sim/cm3_core_util_vector_logic_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cm3_core_util_vector_logic_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.ip_user_files/bd/cm3_core/ip/cm3_core_xbar_0/sim/cm3_core_xbar_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cm3_core_xbar_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.ip_user_files/bd/cm3_core/ip/cm3_core_xlconstant_0_0/sim/cm3_core_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cm3_core_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.ip_user_files/bd/cm3_core/ip/cm3_core_xlconstant_2_0/sim/cm3_core_xlconstant_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cm3_core_xlconstant_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.ip_user_files/bd/cm3_core/ip/cm3_core_xlconstant_1_1/sim/cm3_core_xlconstant_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cm3_core_xlconstant_1_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.ip_user_files/bd/cm3_core/ip/cm3_core_port_swdio_0_0/sim/cm3_core_port_swdio_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cm3_core_port_swdio_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.ip_user_files/bd/cm3_core/sim/cm3_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cm3_core
+INFO: [VRFC 10-311] analyzing module cm3_core_axi_interconnect_0_0
+INFO: [VRFC 10-311] analyzing module m00_couplers_imp_WCSOSO
+INFO: [VRFC 10-311] analyzing module m01_couplers_imp_178BK2X
+INFO: [VRFC 10-311] analyzing module s00_couplers_imp_13AR556
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.ip_user_files/bd/cm3_core/ip/cm3_core_xlconstant_3_0/sim/cm3_core_xlconstant_3_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cm3_core_xlconstant_3_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.ip_user_files/bd/cm3_core/ip/cm3_core_auto_pc_0/sim/cm3_core_auto_pc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cm3_core_auto_pc_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.srcs/sources_1/bd/cm3_core/hdl/cm3_core_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cm3_core_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.srcs/sim_1/new/tb_cm3_demo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_cm3_demo

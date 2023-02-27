@@ -1,0 +1,3 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+WARNING: File cm3_demo.hex referenced on D:/sine/Desktop/IC/Preliminary/Cortex_M3_SoC/Project/cm3_Soc.sim/sim_1/behav/xsim/glbl.v at line 50 cannot be opened for reading. Please ensure that this file is available in the current working directory.
